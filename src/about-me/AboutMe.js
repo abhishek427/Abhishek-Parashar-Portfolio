@@ -9,15 +9,15 @@ import Button from "@material-ui/core/Button";
 const AboutMe = () => {
   return (
     <div>
-      <Paper elevation={3} className="paper-size about-me-height">
+      <Paper elevation={3} className="paper-size">
         <Grid container justify="center">
-          <Grid xs={12} className="heading-alignment heading-height">
+          <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
             <Typography variant="h4">About me</Typography>
+            <Typography className="primary-color">who I am</Typography>
           </Grid>
-
-          <Grid item xs={4}>
+          <Grid item lg={4} md={4} sm={12} xs={12} className="image-container">
             <Paper elevation={5} className="my-image-paper-size">
-              <img src={myImage} className="image-size" />
+              <img src={myImage} className="image-size" alt="Abhishek Parashar" />
             </Paper>
           </Grid>
           <Grid item xs={8}>
@@ -27,7 +27,9 @@ const AboutMe = () => {
                 <Typography variant="inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</Typography>
               </div>
               <div className="side-spacing">
-                <Button variant="contained">Contained</Button>
+                <Button variant="contained" color="secondary" size="large">
+                  <strong>Download Resume</strong>
+                </Button>
               </div>
             </div>
           </Grid>

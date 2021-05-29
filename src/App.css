@@ -1,18 +1,24 @@
+/* default values */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.primary-color {
+  color: crimson;
+}
 .item-position {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .paper-size {
-  position: absolute;
-  left: 150px;
-  width: calc(100% - 300px);
+  margin: 2% 4%;
   padding: 5px;
 }
 .heading-alignment {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .heading-height {
   height: 100px;
