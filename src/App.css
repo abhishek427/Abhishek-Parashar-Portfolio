@@ -9,3 +9,14 @@
   width: calc(100% - 300px);
   padding: 5px;
 }
+.heading-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-height {
+  height: 100px;
+}
+.side-spacing {
+  margin: 5%;
+}

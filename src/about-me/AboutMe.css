@@ -1,0 +1,17 @@
+.about-me-height {
+  height: 550px;
+}
+.my-image-paper-size {
+  height: 450px;
+  margin-left: 5%;
+}
+.image-size {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+.about-me-wrapper {
+  display: flex;
+  flex-direction: column;
+}
