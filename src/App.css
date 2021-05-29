@@ -5,6 +5,9 @@ body {
 .primary-color {
   color: crimson;
 }
+.peragraph-fontsize {
+  font-size: 18px;
+}
 .item-position {
   display: flex;
   justify-content: center;
@@ -22,7 +25,4 @@ body {
 }
 .heading-height {
   height: 100px;
-}
-.side-spacing {
-  margin: 5%;
 }

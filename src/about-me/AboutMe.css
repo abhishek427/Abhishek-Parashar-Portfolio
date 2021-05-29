@@ -17,3 +17,13 @@
   display: flex;
   flex-direction: column;
 }
+.side-spacing-aboutme-text {
+  padding: 5% 0% 0% 5%;
+}
+.aboutme-text-style {
+  margin: 0;
+  font-size: 35px;
+}
+.side-spacing-aboutme {
+  margin: 6% 5%;
+}
