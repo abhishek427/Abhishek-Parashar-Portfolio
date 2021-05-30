@@ -5,11 +5,18 @@ body {
 .primary-color {
   color: crimson;
 }
+.section-background-color {
+  background-color: #111;
+}
+.heading-color {
+  color: white;
+}
 .peragraph-fontsize {
   font-size: 18px;
 }
 .item-position {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -25,4 +32,7 @@ body {
 }
 .heading-height {
   height: 100px;
+}
+.card-color {
+  background-color: #222 !important;
 }

@@ -1,0 +1,13 @@
+.card-spacing {
+  margin: 5% 2% !important;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.card-heading {
+  font-size: 25px;
+  font-weight: 500;
+}
