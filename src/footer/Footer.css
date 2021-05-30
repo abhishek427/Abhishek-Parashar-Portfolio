@@ -1,0 +1,10 @@
+.footer-container {
+  background-color: black;
+}
+.footer-text {
+  color: white;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+}
