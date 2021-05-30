@@ -1,5 +1,5 @@
 .card-spacing {
-  margin: 5% 2% !important;
+  margin: 5% 30px !important;
 }
 .card-content {
   display: flex;
@@ -10,4 +10,12 @@
 .card-heading {
   font-size: 25px;
   font-weight: 500;
+}
+.icon-size {
+  height: 70px;
+  width: 70px;
+}
+.icon-style {
+  width: 100% !important;
+  height: 100%;
 }

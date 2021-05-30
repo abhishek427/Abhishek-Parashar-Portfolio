@@ -4,11 +4,13 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faEgg } from "@fortawesome/free-solid-svg-icons";
 
 let cardData = [
-  { key: 1, title: "Web Developer", subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
-  { key: 2, title: "Accessibility developer", subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
-  { key: 3, title: "Tester", subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
+  { key: 1, title: "Web Developer", icon: faCoffee, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
+  { key: 2, title: "Accessibility developer", icon: faEgg, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
+  { key: 3, title: "Tester", icon: faCoffee, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
 ];
 function MyServices() {
   return (
@@ -25,6 +27,9 @@ function MyServices() {
           <Grid item lg={3} md={3} sm={12} xs={12} key={data.key} className="card-spacing">
             <Card className="card-color">
               <CardContent className="card-content">
+                <span className="icon-size">
+                  <FontAwesomeIcon icon={data.icon} className="icon-style primary-color" />
+                </span>
                 <p className="heading-color card-heading">{data.title}</p>
                 <p className="heading-color">{data.subheading}</p>
               </CardContent>
