@@ -28,7 +28,7 @@ function MyServices() {
             <Card className="card-color">
               <CardContent className="card-content">
                 <span className="icon-size">
-                  <FontAwesomeIcon icon={data.icon} className="icon-style primary-color" />
+                  <FontAwesomeIcon icon={data.icon} className="icon-style" />
                 </span>
                 <p className="heading-color card-heading">{data.title}</p>
                 <p className="heading-color">{data.subheading}</p>
