@@ -1,0 +1,17 @@
+#progressbar {
+  background-color: #eee;
+  padding: 3px;
+  border-radius: 13px;
+  margin-bottom: 18px;
+}
+
+#progressbar > div {
+  background-color: crimson;
+  height: 10px;
+  border-radius: 13px;
+}
+
+.skill-value {
+  display: flex;
+  justify-content: flex-end;
+}
