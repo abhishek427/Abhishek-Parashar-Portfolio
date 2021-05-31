@@ -20,11 +20,11 @@ function MySkills() {
           <Typography variant="h4">My Skills</Typography>
           <Typography className="primary-color">What I know</Typography>
         </Grid>
-        <Grid item lg={5} md={5} sm={12} xs={12}>
+        <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           <p className="section-heading">My creative skills & experiences.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
         </Grid>
-        <Grid item lg={5} md={5} sm={12} xs={12}>
+        <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           {skillData.map((data) => {
             return (
               <div key={data.key}>

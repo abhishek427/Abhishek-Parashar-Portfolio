@@ -21,7 +21,7 @@ function ContactMe() {
           <Typography variant="h4">Contact me</Typography>
           <Typography className="primary-color">get in touch</Typography>
         </Grid>
-        <Grid item lg={5} md={5} sm={12} xs={12}>
+        <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           <p className="section-heading">Get in Touch</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
           {contactData.map((data) => {
@@ -38,7 +38,7 @@ function ContactMe() {
             );
           })}
         </Grid>
-        <Grid item lg={5} md={5} sm={12} xs={12}>
+        <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           <p className="section-heading">Message Me</p>
           <Grid container spacing={3}>
             <Grid item xs={6}>

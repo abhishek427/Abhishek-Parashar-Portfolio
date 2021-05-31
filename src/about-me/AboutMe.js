@@ -24,11 +24,17 @@ const AboutMe = () => {
             <div className="about-me-wrapper">
               <div className="side-spacing-aboutme-text">
                 <p className="aboutme-text-style">
-                  I am a{" "}
-                  <span className="primary-color">
-                    {" "}
-                    <Typical loop={Infinity} wrapper="b" steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} />
-                  </span>
+                  <Grid container>
+                    <Grid item lg={1} md={1} sm={12} xs={12}>
+                      I am
+                    </Grid>
+                    <Grid item lg={11} md={11} sm={12} xs={12}>
+                      <span className="primary-color">
+                        {" "}
+                        <Typical loop={Infinity} wrapper="b" steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} />
+                      </span>
+                    </Grid>
+                  </Grid>
                 </p>
               </div>
               <div className="side-spacing-aboutme">
