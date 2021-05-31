@@ -23,7 +23,7 @@ const AboutMe = () => {
           <Grid item xs={8}>
             <div className="about-me-wrapper">
               <div className="side-spacing-aboutme-text">
-                <p className="aboutme-text-style">
+                <div className="aboutme-text-style">
                   <Grid container>
                     <Grid item lg={1} md={1} sm={12} xs={12}>
                       I am
@@ -35,7 +35,7 @@ const AboutMe = () => {
                       </span>
                     </Grid>
                   </Grid>
-                </p>
+                </div>
               </div>
               <div className="side-spacing-aboutme">
                 <Typography variant="inherit" className="peragraph-fontsize">

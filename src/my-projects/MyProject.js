@@ -4,8 +4,9 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faCoffee, faEgg } from "@fortawesome/free-solid-svg-icons";
+import myImage from "../images/profile-1.jpeg";
 
 let cardData = [
   { key: 1, title: "sonu", icon: faCoffee, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
@@ -27,9 +28,9 @@ function MyServices() {
           <Grid item lg={3} md={3} sm={12} xs={12} key={data.key} className="card-spacing">
             <Card className="card-color">
               <CardContent className="card-content">
-                <span className="icon-size">
-                  <FontAwesomeIcon icon={data.icon} className="icon-style" />
-                </span>
+                <div className="imageContner-project">
+                  <img src={myImage} alt="" srcset="" className="image-size-project" />
+                </div>
                 <p className="heading-color card-heading">{data.title}</p>
                 <p className="heading-color">{data.subheading}</p>
               </CardContent>

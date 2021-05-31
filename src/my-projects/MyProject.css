@@ -24,3 +24,16 @@
   background-color: crimson !important;
   color: white !important;
 }
+.imageContner-project {
+  height: 150px;
+  width: 150px;
+}
+.image-size-project {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 100%;
+  border: 6px solid crimson;
+}
