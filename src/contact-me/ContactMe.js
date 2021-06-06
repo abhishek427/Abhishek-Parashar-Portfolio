@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactMe.css";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -7,6 +7,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPersonBooth } from "@fortawesome/free-solid-svg-icons";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import Slide from "@material-ui/core/Slide";
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 let contactData = [
   { key: 1, title: "Name", value: "Abhishek Parashar", icon: faPersonBooth },
@@ -14,6 +24,65 @@ let contactData = [
   { key: 3, title: "Email", value: "abhishek427821@gmail.com", icon: faPersonBooth },
 ];
 function ContactMe() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [msg, setMsg] = useState("");
+  const [errors, setErrors] = useState([]);
+  const [liveValidationStart] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const validateForm = () => {
+    let errorValue = false;
+    let errors = {};
+    let requireFields = ["name", "email", "subject", "msg"];
+    let emailFields = ["email"];
+
+    requireFields.forEach((field, index) => {
+      if (document.getElementById(field) !== null) {
+        let value;
+        if (document.getElementById(field).value !== undefined) {
+          value = document.getElementById(field).value;
+        } else {
+          value = document.getElementById(field).innerHTML;
+          if (value === "<span>​</span>") {
+            value = -1;
+          }
+        }
+        if (value.length < 1 || value === -1) {
+          errors[field] = "This field is required";
+        } else if (emailFields.indexOf(field) !== -1 && !value.match(/^[\w\.=-]+@[\w\.-]+\.[\w]{2,3}$/)) {
+          errors[field] = "This field should be a valid email";
+        } else if (email != null) {
+        }
+        if (errorValue === false) {
+        }
+      }
+    });
+    setErrors(errors);
+
+    return Object.keys(errors).length > 0 ? true : false;
+  };
+
+  const saveTeacherData = () => {
+    if (validateForm() === true) {
+      handleClickOpen();
+      console.log("abhishek");
+    }
+  };
+  const validate = () => {
+    if (liveValidationStart === false) {
+      validateForm();
+    }
+  };
   return (
     <Paper elevation={3} className="paper-size">
       <Grid container justify="center" spacing={3}>
@@ -42,25 +111,97 @@ function ContactMe() {
           <p className="section-heading">Message Me</p>
           <Grid container spacing={3}>
             <Grid item xs={6}>
-              <TextField id="Name" label="Name" variant="outlined" className="text-field-width" />
+              <TextField
+                id="name"
+                label="Name"
+                variant="outlined"
+                required
+                error={errors["name"]}
+                helperText={errors["name"]}
+                fullWidth
+                autoComplete="name"
+                value={name}
+                onChange={(event) => {
+                  setName(event.target.value);
+                  validate();
+                }}
+              />
             </Grid>
             <Grid item xs={6}>
-              <TextField id="Email" label="Email" variant="outlined" className="text-field-width" />
+              <TextField
+                id="email"
+                label="Email"
+                required
+                error={errors["email"]}
+                helperText={errors["email"]}
+                fullWidth
+                autoComplete="Email"
+                value={email}
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                  validate();
+                }}
+                variant="outlined"
+              />
             </Grid>
             <Grid item xs={12}>
-              <TextField id="Subject" label="Subject" variant="outlined" className="text-field-width" />
+              <TextField
+                id="subject"
+                label="Subject"
+                variant="outlined"
+                required
+                error={errors["subject"]}
+                helperText={errors["subject"]}
+                fullWidth
+                autoComplete="subject"
+                value={subject}
+                onChange={(event) => {
+                  setSubject(event.target.value);
+                  validate();
+                }}
+              />
             </Grid>
             <Grid item xs={12}>
-              <TextField id="Message" label="Message" multiline rows={4} variant="outlined" className="text-field-width" />
+              <TextField
+                id="msg"
+                label="Message"
+                variant="outlined"
+                required
+                error={errors["msg"]}
+                helperText={errors["msg"]}
+                fullWidth
+                autoComplete="message"
+                value={msg}
+                onChange={(event) => {
+                  setMsg(event.target.value);
+                  validate();
+                }}
+                multiline
+                rows={4}
+              />
             </Grid>
             <Grid item={12} className="btn-contaner">
-              <Button variant="contained" color="secondary" size="large">
+              <Button variant="contained" color="secondary" size="large" onClick={saveTeacherData}>
                 <strong>Send message</strong>
               </Button>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
+      <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
+        <DialogTitle id="alert-dialog-slide-title">{"Use Google's location service?"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-slide-description">Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary">
+            Disagree
+          </Button>
+          <Button onClick={handleClose} color="primary">
+            Agree
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Paper>
   );
 }

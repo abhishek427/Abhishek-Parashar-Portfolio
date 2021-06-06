@@ -29,7 +29,7 @@ function MyServices() {
             <Card className="card-color">
               <CardContent className="card-content">
                 <div className="imageContner-project">
-                  <img src={myImage} alt="" srcset="" className="image-size-project" />
+                  <img src={myImage} alt="" className="image-size-project" />
                 </div>
                 <p className="heading-color card-heading">{data.title}</p>
                 <p className="heading-color">{data.subheading}</p>
