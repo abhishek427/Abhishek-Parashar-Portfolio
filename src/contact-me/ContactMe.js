@@ -3,8 +3,6 @@ import "./ContactMe.css";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPersonBooth } from "@fortawesome/free-solid-svg-icons";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
@@ -12,14 +10,26 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
+import { Icon } from "@iconify/react";
+import accountIcon from "@iconify-icons/mdi/account";
+import mapMarkerRadius from "@iconify-icons/mdi/map-marker-radius";
+import emailOutline from "@iconify-icons/mdi/email-outline";
+import linkedinIcon from "@iconify-icons/mdi/linkedin";
+import facebookIcon from "@iconify-icons/mdi/facebook";
+import instagramIcon from "@iconify-icons/mdi/instagram";
+
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
-
+let socialMediaData = [
+  { key: 1, icon: linkedinIcon, link: "https://www.linkedin.com/in/abhishek-parashar-ba6b26a2/" },
+  { key: 2, icon: facebookIcon, link: "https://www.facebook.com/abhishek.parasar.505/" },
+  { key: 3, icon: instagramIcon, link: "https://www.instagram.com/parashar427/" },
+];
 let contactData = [
-  { key: 1, title: "Name", value: "Abhishek Parashar", icon: faPersonBooth },
-  { key: 2, title: "Address", value: "Modinagar", icon: faPersonBooth },
-  { key: 3, title: "Email", value: "abhishek427821@gmail.com", icon: faPersonBooth },
+  { key: 1, title: "Name", value: "Abhishek Parashar", icon: accountIcon },
+  { key: 2, title: "Address", value: "Modinagar", icon: mapMarkerRadius },
+  { key: 3, title: "Email", value: "abhishek427821@gmail.com", icon: emailOutline },
 ];
 function ContactMe() {
   const [name, setName] = useState("");
@@ -98,7 +108,7 @@ function ContactMe() {
             return (
               <Grid container alignItems="center" className="contactData" key={data.key}>
                 <Grid item xs={1}>
-                  <FontAwesomeIcon icon={data.icon} className="primary-color" />
+                  <Icon icon={data.icon} className="contact-me-icons" />
                 </Grid>
                 <Grid item xs={11}>
                   <strong>{data.title}</strong>
@@ -188,6 +198,20 @@ function ContactMe() {
             </Grid>
           </Grid>
         </Grid>
+        <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
+          <div>
+            <strong>Follow me on </strong>
+          </div>
+          {socialMediaData.map((data) => {
+            return (
+              <a href={data.link} key={data.key} style={{ textDecoration: "none" }}>
+                {" "}
+                <Icon icon={data.icon} className="socal-media-icons" />
+              </a>
+            );
+          })}
+        </Grid>
+        <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing"></Grid>
       </Grid>
       <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
         <Grid container justify="center" alignItems="center">

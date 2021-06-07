@@ -20,3 +20,14 @@
   width: 50px !important;
   height: 50px !important;
 }
+.contact-me-icons {
+  color: crimson;
+  width: 80%;
+  height: 80%;
+}
+.socal-media-icons {
+  color: crimson;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
