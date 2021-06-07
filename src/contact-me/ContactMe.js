@@ -9,11 +9,9 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
-
+import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -73,9 +71,12 @@ function ContactMe() {
   };
 
   const saveTeacherData = () => {
-    if (validateForm() === true) {
+    if (validateForm() === false) {
       handleClickOpen();
-      console.log("abhishek");
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMsg("");
     }
   };
   const validate = () => {
@@ -189,16 +190,23 @@ function ContactMe() {
         </Grid>
       </Grid>
       <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
-        <DialogTitle id="alert-dialog-slide-title">{"Use Google's location service?"}</DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Disagree
-          </Button>
-          <Button onClick={handleClose} color="primary">
-            Agree
+        <Grid container justify="center" alignItems="center">
+          <Grid item xs={12}>
+            <DialogTitle id="alert-dialog-slide-title">
+              <div className="dialog-contant">
+                Thank You for Messaging me <InsertEmoticonIcon style={{ marginLeft: "10px", color: "crimson" }} />
+              </div>
+            </DialogTitle>
+          </Grid>
+          <Grid item xs={12}>
+            <div className="dialog-contant">
+              <p>I will contact you shortly.</p>
+            </div>
+          </Grid>
+        </Grid>
+        <DialogActions style={{ display: "flex", justifyContent: "center" }}>
+          <Button onClick={handleClose} variant="contained" color="secondary">
+            <strong>Okay</strong>
           </Button>
         </DialogActions>
       </Dialog>
