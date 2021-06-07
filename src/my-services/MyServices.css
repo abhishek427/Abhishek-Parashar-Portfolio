@@ -15,12 +15,16 @@
   height: 70px;
   width: 70px;
 }
-.icon-style {
+.my-services-icon-style {
   width: 100% !important;
   height: 100%;
   color: white;
 }
 .card-color:hover {
   background-color: crimson !important;
+  color: white !important;
+}
+.card-color-two:hover {
+  background-color: #222 !important;
   color: white !important;
 }

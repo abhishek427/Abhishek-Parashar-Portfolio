@@ -39,6 +39,9 @@ body {
 .card-color {
   background-color: #222 !important;
 }
+.card-color-two {
+  background-color: crimson !important;
+}
 .section-heading {
   font-size: 20px;
   font-weight: 600;
