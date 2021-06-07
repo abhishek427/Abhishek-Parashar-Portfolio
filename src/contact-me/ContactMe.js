@@ -193,8 +193,9 @@ function ContactMe() {
         <Grid container justify="center" alignItems="center">
           <Grid item xs={12}>
             <DialogTitle id="alert-dialog-slide-title">
+              <div className="dialog-contant">Thank You for Messaging me</div>
               <div className="dialog-contant">
-                Thank You for Messaging me <InsertEmoticonIcon style={{ marginLeft: "10px", color: "crimson" }} />
+                <InsertEmoticonIcon className="icon-style" />
               </div>
             </DialogTitle>
           </Grid>

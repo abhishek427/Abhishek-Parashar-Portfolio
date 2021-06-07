@@ -12,3 +12,11 @@
   align-items: center;
   justify-content: center;
 }
+#alert-dialog-slide-title {
+  padding: 16px 16px 0px 16px !important;
+}
+.icon-style {
+  color: crimson !important;
+  width: 50px !important;
+  height: 50px !important;
+}
