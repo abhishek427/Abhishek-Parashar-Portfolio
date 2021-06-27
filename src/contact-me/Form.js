@@ -130,7 +130,8 @@ function Form() {
         <small>{errors["subject"]}</small>
         <div className="messageContainer">
           <label>Message</label>
-          <textarea
+          <input
+            type="text"
             name="message"
             id="msg"
             className={errors["msg"] ? "errorClass" : ""}
