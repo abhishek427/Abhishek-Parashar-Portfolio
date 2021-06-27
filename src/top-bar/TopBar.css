@@ -1,0 +1,14 @@
+.top-bar-container {
+  background-color: crimson;
+  height: 60px;
+  color: white;
+}
+.top-bar-item {
+  display: flex;
+  justify-content: center;
+}
+.item-btn {
+  height: 100%;
+  width: 100%;
+  color: white;
+}

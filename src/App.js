@@ -8,7 +8,7 @@ import MyProject from "./my-projects/MyProject";
 import Footer from "./footer/Footer";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { Grid } from "@material-ui/core";
-//import Test from "./Test";
+import TopBar from "./top-bar/TopBar";
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -27,13 +27,13 @@ function App() {
   window.addEventListener("scroll", checkScrollTop);
   return (
     <div className="item-position">
+      <TopBar />
       <AboutMe />
       <MyServices />
       <MySkills />
       <MyProject />
       <ContactMe />
       <Footer />
-      {/* <Test /> */}
       <Grid container justify="flex-end" style={{ marginRight: "40px" }}>
         <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{ height: 40, width: 40, display: showScroll ? "flex" : "none", color: "crimson" }} />
       </Grid>
