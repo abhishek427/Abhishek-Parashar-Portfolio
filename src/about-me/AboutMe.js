@@ -9,7 +9,7 @@ import Typical from "react-typical";
 const AboutMe = () => {
   return (
     <div>
-      <Paper elevation={3} className="paper-size">
+      <Paper elevation={3} className="paper-size about-me-container">
         <Grid container justify="center">
           <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
             <Typography variant="h4">About me</Typography>

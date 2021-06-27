@@ -27,3 +27,6 @@
 .side-spacing-aboutme {
   margin: 6% 5%;
 }
+.about-me-container {
+  margin-top: 75px !important;
+}

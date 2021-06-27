@@ -1,7 +1,9 @@
 .top-bar-container {
   background-color: crimson;
   height: 60px;
-  color: white;
+  top: 0;
+  position: fixed;
+  z-index: 9999;
 }
 .top-bar-item {
   display: flex;
@@ -10,5 +12,8 @@
 .item-btn {
   height: 100%;
   width: 100%;
+  color: white;
+}
+strong {
   color: white;
 }
