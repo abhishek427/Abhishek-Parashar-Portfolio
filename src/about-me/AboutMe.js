@@ -29,10 +29,7 @@ const AboutMe = () => {
                       I am
                     </Grid>
                     <Grid item lg={11} md={11} sm={12} xs={12}>
-                      <span className="primary-color">
-                        {" "}
-                        <Typical loop={Infinity} wrapper="b" steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} />
-                      </span>
+                      <span className="primary-color"> {/* <Typical loop={Infinity} wrapper="b" steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} /> */}</span>
                     </Grid>
                   </Grid>
                 </div>
