@@ -18,7 +18,7 @@ function Form() {
   const [errors, setErrors] = useState([]);
   const [email, setEmail] = useState("");
   const [liveValidationStart] = useState(false);
-  const [flag, setFlag] = useState(true);
+  const [flag, setFlag] = useState(false);
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [msg, setMsg] = useState("");

@@ -6,22 +6,22 @@ function TopBar() {
     <Grid container justify="center" alignItems="center" className="top-bar-container">
       <Grid item xs={3} className="top-bar-item">
         <Button className="item-btn">
-          <strong>My Services</strong>
+          <strong className="top-bar-text">My Services</strong>
         </Button>
       </Grid>
       <Grid item xs={3} className="top-bar-item">
         <Button className="item-btn">
-          <strong>My Skills</strong>
+          <strong className="top-bar-text">My Skills</strong>
         </Button>
       </Grid>
       <Grid item xs={3} className="top-bar-item">
         <Button className="item-btn">
-          <strong>My Projects</strong>
+          <strong className="top-bar-text">My Projects</strong>
         </Button>
       </Grid>
       <Grid item xs={3} className="top-bar-item">
         <Button className="item-btn">
-          <strong>Contact me</strong>
+          <strong className="top-bar-text">Contact me</strong>
         </Button>
       </Grid>
     </Grid>
