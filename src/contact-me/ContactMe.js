@@ -25,7 +25,7 @@ let contactData = [
 ];
 function ContactMe() {
   return (
-    <Paper elevation={3} className="paper-size">
+    <Paper elevation={3} className="paper-size" id="contact">
       <Grid container justify="center" spacing={3}>
         <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
           <Typography variant="h4">Contact me</Typography>
