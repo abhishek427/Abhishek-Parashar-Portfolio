@@ -16,9 +16,12 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 function Form() {
   const [open, setOpen] = useState(false);
   const [errors, setErrors] = useState([]);
-  const [email] = useState("");
+  const [email, setEmail] = useState("");
   const [liveValidationStart] = useState(false);
   const [flag, setFlag] = useState(true);
+  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [msg, setMsg] = useState("");
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -30,7 +33,10 @@ function Form() {
 
   function sendEmail(e) {
     e.preventDefault();
-
+    setName("");
+    setEmail("");
+    setMsg("");
+    setSubject("");
     if (validateForm() === false) {
       setFlag(true);
       emailjs.sendForm("service_yjjgv3v", "template_yja62ud", e.target, process.env.REACT_APP_DATA_ENV).then(
@@ -95,7 +101,9 @@ function Form() {
               name="name"
               placeholder="Enter your name..."
               className={errors["name"] ? "errorClass" : ""}
+              value={name}
               onChange={(e) => {
+                setName(e.target.value);
                 validate();
               }}
             />
@@ -106,10 +114,12 @@ function Form() {
             <input
               type="email"
               name="email"
+              value={email}
               placeholder="Enter your email..."
               id="email"
               className={errors["email"] ? "errorClass" : ""}
               onChange={(e) => {
+                setEmail(e.target.value);
                 validate();
               }}
             />
@@ -120,10 +130,12 @@ function Form() {
         <input
           type="text"
           name="subject"
+          value={subject}
           placeholder="Enter the subject of this message..."
           id="subject"
           className={errors["subject"] ? "errorClass" : ""}
           onChange={(e) => {
+            setSubject(e.target.value);
             validate();
           }}
         />
@@ -133,46 +145,42 @@ function Form() {
           <input
             type="text"
             name="message"
+            value={msg}
             id="msg"
             className={errors["msg"] ? "errorClass" : ""}
             onChange={(e) => {
+              setMsg(e.target.value);
               validate();
             }}
           />
           <small>{errors["msg"]}</small>
         </div>
         <Button type="submit" variant="contained" color="secondary" size="large">
-          <strong>Send message</strong>
+          {flag === true ? <CircularProgress style={{ color: "white" }} /> : <strong>Send message</strong>}
         </Button>
       </form>
-      {flag === true ? (
-        <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
-          <CircularProgress color="secondary" />
-        </Dialog>
-      ) : (
-        <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
-          <Grid container justify="center" alignItems="center">
-            <Grid item xs={12}>
-              <DialogTitle id="alert-dialog-slide-title">
-                <div className="dialog-contant">Thank You for Messaging me</div>
-                <div className="dialog-contant">
-                  <InsertEmoticonIcon className="icon-style" />
-                </div>
-              </DialogTitle>
-            </Grid>
-            <Grid item xs={12}>
+      <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
+        <Grid container justify="center" alignItems="center">
+          <Grid item xs={12}>
+            <DialogTitle id="alert-dialog-slide-title">
+              <div className="dialog-contant">Thank You for Messaging me</div>
               <div className="dialog-contant">
-                <p>I will contact you shortly.</p>
+                <InsertEmoticonIcon className="icon-style" />
               </div>
-            </Grid>
+            </DialogTitle>
           </Grid>
-          <DialogActions style={{ display: "flex", justifyContent: "center" }}>
-            <Button onClick={handleClose} variant="contained" color="secondary">
-              <strong>Okay</strong>
-            </Button>
-          </DialogActions>
-        </Dialog>
-      )}
+          <Grid item xs={12}>
+            <div className="dialog-contant">
+              <p>I will contact you shortly.</p>
+            </div>
+          </Grid>
+        </Grid>
+        <DialogActions style={{ display: "flex", justifyContent: "center" }}>
+          <Button onClick={handleClose} variant="contained" color="secondary">
+            <strong>Okay</strong>
+          </Button>
+        </DialogActions>
+      </Dialog>
     </>
   );
 }
