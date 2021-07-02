@@ -38,6 +38,8 @@ body {
 }
 .card-color {
   background-color: #222 !important;
+  height: 100%;
+  width: 100%;
 }
 .card-color-two {
   background-color: crimson !important;

@@ -9,7 +9,6 @@ import Footer from "./footer/Footer";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { Grid } from "@material-ui/core";
 import TopBar from "./top-bar/TopBar";
-import Test from "./test";
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -30,7 +29,6 @@ function App() {
     <div className="item-position">
       <TopBar />
       <AboutMe />
-      <Test />
       <MyServices />
       <MySkills />
       <MyProject />
