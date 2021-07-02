@@ -9,6 +9,7 @@ import Footer from "./footer/Footer";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { Grid } from "@material-ui/core";
 import TopBar from "./top-bar/TopBar";
+
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 

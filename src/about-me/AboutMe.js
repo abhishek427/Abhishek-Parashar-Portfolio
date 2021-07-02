@@ -9,7 +9,7 @@ import Typical from "react-typical";
 const AboutMe = () => {
   return (
     <div>
-      <Paper elevation={3} className="paper-size about-me-container">
+      <Paper elevation={3} className="paper-size about-me-container" id="aboutMe">
         <Grid container justify="center">
           <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
             <Typography variant="h4">About me</Typography>
@@ -29,7 +29,10 @@ const AboutMe = () => {
                       I am
                     </Grid>
                     <Grid item lg={11} md={11} sm={12} xs={12}>
-                      <span className="primary-color"> {/* <Typical loop={Infinity} wrapper="b" steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} /> */}</span>
+                      <span className="primary-color">
+                        <strong>Software Developer</strong>
+                        {/* <Typical loop={Infinity} wrapper="b" steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} /> */}
+                      </span>
                     </Grid>
                   </Grid>
                 </div>

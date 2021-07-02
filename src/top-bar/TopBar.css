@@ -1,5 +1,5 @@
 .top-bar-container {
-  background-color: crimson;
+  background-color: crimson !important;
   height: 60px;
   top: 0;
   position: fixed;
@@ -19,7 +19,23 @@
 .top-bar-text {
   color: white;
 }
+.top-bar-text-mobile {
+  color: crimson;
+}
 .top-bar-link {
   height: 100%;
+  width: 100%;
+}
+.mobile-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-top-bar-icon {
+  height: 28px;
+  width: 26px;
+  color: white;
+}
+.mobile-top-bar-link {
+  height: 50px;
   width: 100%;
 }
