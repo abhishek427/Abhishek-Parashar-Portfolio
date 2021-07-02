@@ -10,6 +10,12 @@
   justify-content: center;
   height: 100%;
 }
+.mobile-top-bar-item {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 0.5px solid gray;
+}
 .item-btn {
   height: 100%;
   width: 100%;
