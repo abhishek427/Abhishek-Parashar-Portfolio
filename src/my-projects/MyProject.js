@@ -22,7 +22,7 @@ function MyServices() {
         </Typography>
         <Typography className="primary-color">what I did</Typography>
       </Grid>
-      <Grid item lg={12} md={12} sm={12} xs={12} className="card-spacing" style={{ width: "100%", height: "100%" }}>
+      <Grid item lg={12} md={12} sm={12} xs={12} className="project-card-spacing" style={{ width: "100%", height: "100%" }}>
         <Carousel style={{ width: "100%", height: "100%" }}>
           {cardData.map((data) => {
             return (
