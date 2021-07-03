@@ -33,7 +33,13 @@ const useStyles = makeStyles((theme) => ({
 function TopBar() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-
+  const navData = [
+    { key: 1, offset: -73, to: "aboutMe", title: "About me" },
+    { key: 2, offset: -57, to: "service", title: "My Services" },
+    { key: 3, offset: -73, to: "skill", title: "My Skills" },
+    { key: 4, offset: -57, to: "project", title: "My Projects" },
+    { key: 5, offset: -73, to: "contact", title: "Contact me" },
+  ];
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -45,42 +51,18 @@ function TopBar() {
   return (
     <AppBar className="top-bar-container">
       <div className={classes.sectionDesktop}>
-        <Grid container justify="flex-end">
-          <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item">
-            <Link to="aboutMe" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true} className="top-bar-link">
-              <Button className="item-btn">
-                <strong className="top-bar-text">About me</strong>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item">
-            <Link to="service" smooth={true} duration={500} offset={-57} activeClass="active" isDynamic={true} className="top-bar-link">
-              <Button className="item-btn">
-                <strong className="top-bar-text">My Services</strong>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item">
-            <Link to="skill" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true} className="top-bar-link">
-              <Button className="item-btn">
-                <strong className="top-bar-text">My Skills</strong>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item">
-            <Link to="project" smooth={true} duration={500} offset={-57} activeClass="active" isDynamic={true} className="top-bar-link">
-              <Button className="item-btn">
-                <strong className="top-bar-text">My Projects</strong>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item">
-            <Link to="contact" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true} className="top-bar-link">
-              <Button className="item-btn">
-                <strong className="top-bar-text">Contact me</strong>
-              </Button>
-            </Link>
-          </Grid>
+        <Grid container justify="center">
+          {navData.map((data) => {
+            return (
+              <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item" key={data.key}>
+                <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true} className="top-bar-link">
+                  <Button className="item-btn">
+                    <strong className="top-bar-text">{data.title}</strong>
+                  </Button>
+                </Link>
+              </Grid>
+            );
+          })}
         </Grid>
       </div>
       <div className={classes.sectionMobile}>
@@ -90,41 +72,17 @@ function TopBar() {
           </Grid>
           <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
             <Grid container>
-              <Grid item lg={12} md={12} sm={12} xs={12} className="mobile-top-bar-item">
-                <Link to="aboutMe" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true} className="mobile-top-bar-link" onClick={handleClose}>
-                  <Button className="item-btn">
-                    <strong className="top-bar-text-mobile">About me</strong>
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid item lg={12} md={12} sm={12} xs={12} className="mobile-top-bar-item">
-                <Link to="service" smooth={true} duration={500} offset={-57} activeClass="active" isDynamic={true} className="mobile-top-bar-link" onClick={handleClose}>
-                  <Button className="item-btn">
-                    <strong className="top-bar-text-mobile">My Services</strong>
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid item lg={12} md={12} sm={12} xs={12} className="mobile-top-bar-item">
-                <Link to="skill" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true} className="mobile-top-bar-link" onClick={handleClose}>
-                  <Button className="item-btn">
-                    <strong className="top-bar-text-mobile">My Skills</strong>
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid item lg={12} md={12} sm={12} xs={12} className="mobile-top-bar-item">
-                <Link to="project" smooth={true} duration={500} offset={-57} activeClass="active" isDynamic={true} className="mobile-top-bar-link" onClick={handleClose}>
-                  <Button className="item-btn">
-                    <strong className="top-bar-text-mobile">My Projects</strong>
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid item lg={12} md={12} sm={12} xs={12} className="mobile-top-bar-item">
-                <Link to="contact" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true} className="mobile-top-bar-link" onClick={handleClose}>
-                  <Button className="item-btn">
-                    <strong className="top-bar-text-mobile">Contact me</strong>
-                  </Button>
-                </Link>
-              </Grid>
+              {navData.map((data) => {
+                return (
+                  <Grid item lg={12} md={12} sm={12} xs={12} className="mobile-top-bar-item" key={data.key}>
+                    <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true} className="mobile-top-bar-link" onClick={handleClose}>
+                      <Button className="item-btn">
+                        <strong className="top-bar-text-mobile">{data.title}</strong>
+                      </Button>
+                    </Link>
+                  </Grid>
+                );
+              })}
             </Grid>
           </Dialog>
         </Grid>
