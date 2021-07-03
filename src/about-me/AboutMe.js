@@ -5,7 +5,8 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import myImage from "../images/myPhoto.jpeg";
 //import Button from "@material-ui/core/Button";
-//import Typical from "react-typical";
+import ReactTypingEffect from "react-typing-effect";
+import Typical from "react-typical";
 const AboutMe = () => {
   return (
     <div>
@@ -20,7 +21,7 @@ const AboutMe = () => {
               <img src={myImage} className="image-size" alt="Abhishek Parashar" />
             </Paper>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item lg={8} md={8} sm={11} xs={11}>
             <div className="about-me-wrapper">
               <div className="side-spacing-aboutme-text">
                 <div className="aboutme-text-style">
@@ -30,8 +31,10 @@ const AboutMe = () => {
                     </Grid>
                     <Grid item lg={11} md={11} sm={12} xs={12}>
                       <span className="primary-color">
-                        <strong>Software Developer</strong>
-                        {/* <Typical loop={Infinity} wrapper="b" steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} /> */}
+                        {/* <strong>Software Developer</strong> */}
+                        <ReactTypingEffect text={["Software Developer", "FrontEnd Developer"]} speed={100} eraseSpeed={100} eraseDelay={200} typingDelay={200} />
+
+                        {/* <Typical loop={Infinity} steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} className="Typo" /> */}
                       </span>
                     </Grid>
                   </Grid>
