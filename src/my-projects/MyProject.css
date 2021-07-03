@@ -22,8 +22,8 @@
   color: white !important;
 }
 .imageContner-project {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
 }
 .image-size-project {
   max-width: 100%;
@@ -38,4 +38,30 @@
   margin: 1% 30px;
   margin-left: 20px;
   margin-right: 20px;
+}
+.project-heading-container {
+  max-height: 70px;
+  overflow: scroll;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: crimson;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: crimson;
 }

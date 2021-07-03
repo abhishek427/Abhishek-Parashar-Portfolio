@@ -6,12 +6,13 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { faCoffee, faEgg } from "@fortawesome/free-solid-svg-icons";
 import myImage from "../images/profile-1.jpeg";
+import sonu from "../images/sonu1.jpg";
 import Carousel from "react-material-ui-carousel";
 
 let cardData = [
-  { key: 1, title: "sonu", icon: faCoffee, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
-  { key: 2, title: "zapprx", icon: faEgg, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
-  { key: 3, title: "Terri", icon: faCoffee, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
+  { key: 1, title: "Illaj India", icon: faCoffee, image: sonu, subheading: "Working with Sonu Sood to bulid a platform which can help millions of poor peoples who can't afford their surgery expenses ,Techstack used- React js, Redux, Node js ,express js." },
+  { key: 2, title: "zapprx", icon: faEgg, image: myImage, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
+  { key: 3, title: "Terri", icon: faCoffee, image: myImage, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
 ];
 function MyServices() {
   return (
@@ -29,10 +30,12 @@ function MyServices() {
               <Card className="card-color">
                 <CardContent className="card-content">
                   <div className="imageContner-project">
-                    <img src={myImage} alt="" className="image-size-project" />
+                    <img src={data.image} alt="" className="image-size-project" />
                   </div>
                   <p className="heading-color card-heading">{data.title}</p>
-                  <p className="heading-color">{data.subheading}</p>
+                  <div className="project-heading-container">
+                    <p className="heading-color">{data.subheading}</p>
+                  </div>
                 </CardContent>
               </Card>
             );
