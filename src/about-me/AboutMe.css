@@ -12,20 +12,21 @@
 .image-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 3%;
 }
 .about-me-wrapper {
   display: flex;
   flex-direction: column;
 }
 .side-spacing-aboutme-text {
-  padding: 5% 0% 0% 5%;
+  padding: 5% 0% 0% 0%;
 }
 .aboutme-text-style {
   margin: 0;
   font-size: 35px;
 }
 .side-spacing-aboutme {
-  margin: 6% 5%;
+  margin: 6% 0%;
 }
 .about-me-container {
   margin-top: 75px !important;

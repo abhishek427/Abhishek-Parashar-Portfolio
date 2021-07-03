@@ -3,9 +3,9 @@ import "./AboutMe.css";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import myImage from "../images/profile-1.jpeg";
-import Button from "@material-ui/core/Button";
-import Typical from "react-typical";
+import myImage from "../images/myPhoto.jpeg";
+//import Button from "@material-ui/core/Button";
+//import Typical from "react-typical";
 const AboutMe = () => {
   return (
     <div>
@@ -42,11 +42,11 @@ const AboutMe = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.
                 </Typography>
               </div>
-              <div className="side-spacing-aboutme">
+              {/* <div className="side-spacing-aboutme">
                 <Button variant="contained" color="secondary" size="large">
                   <strong>Download Resume</strong>
                 </Button>
-              </div>
+              </div> */}
             </div>
           </Grid>
         </Grid>
