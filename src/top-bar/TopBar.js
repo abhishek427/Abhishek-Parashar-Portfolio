@@ -67,7 +67,10 @@ function TopBar() {
       </div>
       <div className={classes.sectionMobile}>
         <Grid container>
-          <Grid item xs={12} className="mobile-button-container">
+          <Grid item xs={6} className="mobile-name-container">
+            <strong>Abhishek Parashar</strong>
+          </Grid>
+          <Grid item xs={6} className="mobile-button-container">
             <Button onClick={handleClickOpen}>{open === false ? <Icon icon={menuIcon} className="mobile-top-bar-icon" /> : <CloseIcon className="mobile-top-bar-icon" />}</Button>
           </Grid>
           <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">

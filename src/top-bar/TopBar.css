@@ -36,6 +36,12 @@
   display: flex;
   justify-content: flex-end;
 }
+.mobile-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 .mobile-top-bar-icon {
   height: 28px;
   width: 26px;
