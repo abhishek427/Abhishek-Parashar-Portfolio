@@ -21,7 +21,7 @@ const AboutMe = () => {
               <img src={myImage} className="image-size" alt="Abhishek Parashar" />
             </Paper>
           </Grid>
-          <Grid item lg={8} md={8} sm={11} xs={11}>
+          <Grid item lg={8} md={8} sm={12} xs={12}>
             <div className="about-me-wrapper">
               <div className="side-spacing-aboutme-text">
                 <div className="aboutme-text-style">
