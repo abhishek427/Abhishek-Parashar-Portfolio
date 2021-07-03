@@ -68,7 +68,9 @@ function TopBar() {
       <div className={classes.sectionMobile}>
         <Grid container>
           <Grid item xs={6} className="mobile-name-container">
-            <strong>Abhishek Parashar</strong>
+            <Link to="aboutMe" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true}>
+              <strong>Abhishek Parashar</strong>
+            </Link>
           </Grid>
           <Grid item xs={6} className="mobile-button-container">
             <Button onClick={handleClickOpen}>{open === false ? <Icon icon={menuIcon} className="mobile-top-bar-icon" /> : <CloseIcon className="mobile-top-bar-icon" />}</Button>
