@@ -13,7 +13,8 @@ let skillData = [
   { key: 6, title: "HTML", width: "80%" },
   { key: 7, title: "CSS", width: "60%" },
   { key: 8, title: "React Matrial UI", width: "80%" },
-  { key: 9, title: "Cypress.io", width: "40%" },
+  { key: 9, title: "SCSS", width: "60%" },
+  { key: 10, title: "Cypress.io", width: "40%" },
 ];
 function MySkills() {
   return (
