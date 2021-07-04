@@ -7,10 +7,13 @@ import Paper from "@material-ui/core/Paper";
 let skillData = [
   { key: 1, title: "React js", width: "70%" },
   { key: 2, title: "Redux", width: "60%" },
-  { key: 3, title: "JavaScript", width: "70%" },
-  { key: 4, title: "Accessibility", width: "60%" },
-  { key: 5, title: "HTML", width: "80%" },
-  { key: 6, title: "CSS", width: "60%" },
+  { key: 3, title: "Angular", width: "40%" },
+  { key: 4, title: "JavaScript", width: "70%" },
+  { key: 5, title: "Accessibility", width: "60%" },
+  { key: 6, title: "HTML", width: "80%" },
+  { key: 7, title: "CSS", width: "60%" },
+  { key: 8, title: "React Matrial UI", width: "80%" },
+  { key: 9, title: "Cypress.io", width: "40%" },
 ];
 function MySkills() {
   return (
@@ -22,7 +25,7 @@ function MySkills() {
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           <p className="section-heading">My creative skills & experiences.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+          <p>I have 1.5+ years of industry experience as a React and Front-end developer. And having Hands-on, comprehensive knowledge of agile methodologies and web-based applications, and Proven ability to work on multiple projects while meeting challenging deadlines.These are the following technology I know -</p>
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           {skillData.map((data) => {

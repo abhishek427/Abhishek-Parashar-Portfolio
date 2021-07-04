@@ -10,9 +10,9 @@ import wheelchairAccessibility from "@iconify-icons/mdi/wheelchair-accessibility
 import cogsIcon from "@iconify-icons/mdi/cogs";
 
 let cardData = [
-  { key: 1, title: "Web Developer", icon: languageJavascript, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
-  { key: 2, title: "Accessibility developer", icon: wheelchairAccessibility, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
-  { key: 3, title: "Tester", icon: cogsIcon, subheading: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim." },
+  { key: 1, title: "Web Developer", icon: languageJavascript, subheading: "I have a good knowledge of JavaScript and have done many projects on javascript related frameworks and libraries." },
+  { key: 2, title: "Accessibility developer", icon: wheelchairAccessibility, subheading: "I worked on a couple of projects to make Accessibility for the Differently abled people and having good knowledge of WCAG 2.0 and WCAG 3.0." },
+  { key: 3, title: "Tester", icon: cogsIcon, subheading: "I have good knowledge of writing unit tests, functional tests, and integration testing. Using mocha chai and Cypress.io" },
 ];
 function MyServices() {
   return (
@@ -33,7 +33,9 @@ function MyServices() {
                   <Icon icon={data.icon} className="my-services-icon-style" />
                 </span>
                 <p className="heading-color card-heading">{data.title}</p>
-                <p className="heading-color">{data.subheading}</p>
+                <div className="skill-heading-container">
+                  <p className="heading-color">{data.subheading}</p>
+                </div>
               </CardContent>
             </Card>
           </Grid>

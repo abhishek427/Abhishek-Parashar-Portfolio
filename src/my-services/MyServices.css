@@ -28,3 +28,8 @@
   background-color: #222 !important;
   color: white !important;
 }
+.skill-heading-container {
+  max-height: 90px;
+  overflow: scroll;
+  overflow-x: hidden;
+}

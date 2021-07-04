@@ -32,7 +32,7 @@ const AboutMe = () => {
                     <Grid item lg={11} md={11} sm={12} xs={12}>
                       <span className="primary-color">
                         {/* <strong>Software Developer</strong> */}
-                        <ReactTypingEffect text={["Software Developer", "FrontEnd Developer"]} speed={100} eraseSpeed={100} eraseDelay={200} typingDelay={200} />
+                        <ReactTypingEffect text={["Software Developer", "FrontEnd Developer", "Accessibility Dev."]} speed={100} eraseSpeed={100} eraseDelay={200} typingDelay={200} />
 
                         {/* <Typical loop={Infinity} steps={["Software Developer", 1000, "FrontEnd Developer", 1000]} className="Typo" /> */}
                       </span>
@@ -42,7 +42,7 @@ const AboutMe = () => {
               </div>
               <div className="side-spacing-aboutme">
                 <Typography variant="inherit" className="peragraph-fontsize">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.
+                  I have done Post Graduate Diploma in Computer Applications (PGDCA) post-graduate, B.tech in Computer Science Branch and currently working for QA Infotech, Noida. He has a total work experience of one and half years in web application development that includes JavaScript, HTML, CSS. In addition to these, he has got some of the latest technologies and tools like Git, Jira, Postman, etc. in his skill set. Some of the programming languages and frameworks that he has hands-on are React Js, Redux, Angular, Cypress.io, etc. He is looking forward to adding Design Patterns, Data Structures, Nodejs, React Native, and Python near future.
                 </Typography>
               </div>
               {/* <div className="side-spacing-aboutme">
