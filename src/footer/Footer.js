@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import "./Footer.css";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import reactIcon from "@iconify-icons/mdi/react";
 
 function Footer() {

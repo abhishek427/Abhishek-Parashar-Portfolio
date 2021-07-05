@@ -10,7 +10,6 @@ import emailOutline from "@iconify-icons/mdi/email-outline";
 import linkedinIcon from "@iconify-icons/mdi/linkedin";
 import facebookIcon from "@iconify-icons/mdi/facebook";
 import instagramIcon from "@iconify-icons/mdi/instagram";
-import cellphoneIcon from "@iconify-icons/mdi/cellphone";
 
 import Form from "./Form";
 
@@ -23,7 +22,6 @@ let contactData = [
   { key: 1, title: "Name", value: "Abhishek Parashar", icon: accountIcon },
   { key: 2, title: "Address", value: "Modinagar, Ghaziabad (U.P), India", icon: mapMarkerRadius },
   { key: 3, title: "Email", value: "abhishek427821@gmail.com", icon: emailOutline },
-  { key: 4, title: "Contact Number", value: "+91-9045501560", icon: cellphoneIcon },
 ];
 function ContactMe() {
   return (

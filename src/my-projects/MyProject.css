@@ -41,7 +41,8 @@
   margin-right: 20px;
 }
 .project-heading-container {
-  max-height: 50px;
+  max-height: 100px;
+  height: 100px;
   overflow: scroll;
   width: 100%;
   overflow-x: hidden;
@@ -49,7 +50,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 3px;
 }
 
 /* Track */
