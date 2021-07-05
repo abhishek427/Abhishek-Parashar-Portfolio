@@ -16,7 +16,7 @@ let cardData = [
   { key: 2, title: "Clever Education Sol.", image: clever, subheading: "Clever LMS is a K-5 solution for the Montessori school education system. The role based solution enables SuperAdmin, Admin, Teacher  and parents roles to view respective modules . Functionality includes creating online schools, admitting students, creating classes, creating curriculum, task assignments and evaluation." },
   { key: 3, title: "Terri the healer", image: terri, subheading: "In this project, Terri helps the user to heal the mental issue by gathering the data from the client by filling the form and give some suggestions for better leaving and also provide music for relaxation.Tech use - React js, Redux, stripe for payment, etc." },
   { key: 5, title: "Accessibility", image: acc, subheading: "I have done two projects in Accessibility Developer and give 1000+ Accessibility-related recommendations in various projects." },
-  { key: 6, title: "Angular", image: Angular, subheading: "I have done two small projects in Angular as well and have good knowledge of Angular.And also worked on the angular matrial UI" },
+  { key: 6, title: "Angular", image: Angular, subheading: "I have done two small projects in Angular as well and have good knowledge of Angular.And also worked on the angular matrial UI." },
 ];
 function MyServices() {
   return (
