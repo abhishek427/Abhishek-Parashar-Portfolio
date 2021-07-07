@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Abhishek-Parashar-Portfolio/static/css/main.8413ab2c.chunk.css",
-    "main.js": "/Abhishek-Parashar-Portfolio/static/js/main.4713f264.chunk.js",
-    "main.js.map": "/Abhishek-Parashar-Portfolio/static/js/main.4713f264.chunk.js.map",
+    "main.js": "/Abhishek-Parashar-Portfolio/static/js/main.81b2d9f4.chunk.js",
+    "main.js.map": "/Abhishek-Parashar-Portfolio/static/js/main.81b2d9f4.chunk.js.map",
     "runtime-main.js": "/Abhishek-Parashar-Portfolio/static/js/runtime-main.efb4e0de.js",
     "runtime-main.js.map": "/Abhishek-Parashar-Portfolio/static/js/runtime-main.efb4e0de.js.map",
     "static/js/2.9d652123.chunk.js": "/Abhishek-Parashar-Portfolio/static/js/2.9d652123.chunk.js",
@@ -13,13 +13,13 @@
     "static/css/main.8413ab2c.chunk.css.map": "/Abhishek-Parashar-Portfolio/static/css/main.8413ab2c.chunk.css.map",
     "static/js/2.9d652123.chunk.js.LICENSE.txt": "/Abhishek-Parashar-Portfolio/static/js/2.9d652123.chunk.js.LICENSE.txt",
     "static/media/logo.70a3a39d.png": "/Abhishek-Parashar-Portfolio/static/media/logo.70a3a39d.png",
-    "static/media/myPhoto.115a5036.jpeg": "/Abhishek-Parashar-Portfolio/static/media/myPhoto.115a5036.jpeg",
+    "static/media/mypic.e8b75a0c.jpeg": "/Abhishek-Parashar-Portfolio/static/media/mypic.e8b75a0c.jpeg",
     "static/media/sonu1.7b53c3ab.jpg": "/Abhishek-Parashar-Portfolio/static/media/sonu1.7b53c3ab.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.efb4e0de.js",
     "static/js/2.9d652123.chunk.js",
     "static/css/main.8413ab2c.chunk.css",
-    "static/js/main.4713f264.chunk.js"
+    "static/js/main.81b2d9f4.chunk.js"
   ]
 }
