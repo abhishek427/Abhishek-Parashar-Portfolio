@@ -3,7 +3,7 @@ import "./AboutMe.css";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import myImage from "../images/myPhoto.jpeg";
+import myImage from "../images/mypic.jpeg";
 //import Button from "@material-ui/core/Button";
 import ReactTypingEffect from "react-typing-effect";
 
