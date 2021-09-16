@@ -30,7 +30,7 @@ const AboutMe = () => {
                       I am
                     </Grid>
                     <Grid item lg={11} md={11} sm={12} xs={12}>
-                      <span className="primary-color">
+                      <span className="heading-ani-color">
                         <ReactTypingEffect text={["Software Developer", "FrontEnd Developer", "Accessibility Dev."]} speed={100} eraseSpeed={100} eraseDelay={200} typingDelay={200} />
                       </span>
                     </Grid>
