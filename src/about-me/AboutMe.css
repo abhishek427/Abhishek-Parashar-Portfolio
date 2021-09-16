@@ -36,3 +36,15 @@
 .Typo {
   margin: 0 !important;
 }
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.resume-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}

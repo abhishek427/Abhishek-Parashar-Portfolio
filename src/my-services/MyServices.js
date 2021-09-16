@@ -26,7 +26,7 @@ function MyServices() {
 
       {cardData.map((data, index) => {
         return (
-          <Grid item lg={3} md={3} sm={12} xs={12} key={data.key} className="card-spacing">
+          <Grid item lg={3} md={3} sm={12} xs={12} className="card-spacing" key={data.key}>
             <Card className={index % 2 ? "card-color-two" : "card-color"}>
               <CardContent className="card-content">
                 <span className="icon-size">

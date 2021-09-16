@@ -4,7 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import myImage from "../images/myPhoto.jpeg";
-//import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button";
 import ReactTypingEffect from "react-typing-effect";
 
 const AboutMe = () => {
@@ -44,11 +44,13 @@ const AboutMe = () => {
                   <p> I am looking forward to adding Design Patterns, Data Structures, Nodejs, React Native, and Python near future.</p>
                 </Typography>
               </div>
-              {/* <div className="side-spacing-aboutme">
-                <Button variant="contained" color="secondary" size="large">
-                  <strong>Download Resume</strong>
-                </Button>
-              </div> */}
+              <div className="resume-button-container">
+                <a href="https://drive.google.com/file/d/1-WQaidMm92UGNSlJQJLdSduLJG6S2302/view?usp=sharing">
+                  <Button variant="contained" color="secondary" size="large">
+                    <strong>Download Resume</strong>
+                  </Button>
+                </a>
+              </div>
             </div>
           </Grid>
         </Grid>
