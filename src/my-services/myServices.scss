@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+.card-spacing {
+  margin: 5% 30px !important;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.card-heading {
+  font-size: 25px;
+  font-weight: 500;
+}
+.icon-size {
+  height: 70px;
+  width: 70px;
+}
+.my-services-icon-style {
+  width: 100% !important;
+  height: 100%;
+  color: $secondary-color;
+}
+.card-color {
+  &:hover {
+    background-color: $primary-color !important;
+    color: $secondary-color !important;
+  }
+}
+.card-color-two {
+  &:hover {
+    background-color: $secondary-background-color !important;
+    color: $secondary-color !important;
+  }
+}
+.skill-heading-container {
+  max-height: 90px;
+  overflow: scroll;
+  overflow-x: hidden;
+}

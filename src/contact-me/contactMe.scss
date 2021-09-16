@@ -1,0 +1,30 @@
+@import "./../variables.scss";
+
+.contactData {
+  margin: 5% 0;
+}
+.contact-value {
+  margin: 0;
+}
+.btn-contaner {
+  margin-bottom: 25px !important;
+}
+.dialog-contant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#alert-dialog-slide-title {
+  padding: 16px 16px 0px 16px !important;
+}
+.contact-me-icons {
+  color: $primary-color;
+  width: 80%;
+  height: 80%;
+}
+.socal-media-icons {
+  color: $primary-color;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutMe.css";
+import "./aboutMe.scss";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -46,7 +46,7 @@ const AboutMe = () => {
               </div>
               <div className="resume-button-container">
                 <a href="https://drive.google.com/file/d/1-WQaidMm92UGNSlJQJLdSduLJG6S2302/view?usp=sharing">
-                  <Button variant="contained" color="secondary" size="large">
+                  <Button variant="contained" size="large" className="resume-btn">
                     <strong>Download Resume</strong>
                   </Button>
                 </a>

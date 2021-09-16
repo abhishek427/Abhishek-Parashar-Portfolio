@@ -1,7 +1,7 @@
 import { Button, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import "./TopBar.css";
+import "./topBar.scss";
 import { Link } from "react-scroll";
 import AppBar from "@material-ui/core/AppBar";
 import { Icon } from "@iconify/react";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContactMe.css";
+import "./contactMe.scss";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";

@@ -1,0 +1,16 @@
+@import "/src/variables.scss";
+
+.footer-container {
+  background-color: black;
+  height: 60px;
+}
+.footer-text {
+  color: $secondary-color;
+  display: flex;
+  justify-content: center;
+}
+.footer-icon {
+  margin: 2px;
+  padding-right: 5px;
+  color: $primary-color;
+}

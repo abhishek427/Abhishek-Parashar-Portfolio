@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./app.scss";
 import AboutMe from "./about-me/AboutMe";
 import MyServices from "./my-services/MyServices";
 import MySkills from "./my-skills/MySkills";
@@ -42,7 +42,7 @@ function App() {
         <Footer />
       </footer>
       <Grid container justify="flex-end" style={{ marginRight: "40px" }}>
-        <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{ height: 40, width: 40, display: showScroll ? "flex" : "none", color: "crimson" }} />
+        <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? "flex" : "none" }} />
       </Grid>
     </div>
   );

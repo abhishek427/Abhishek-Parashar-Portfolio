@@ -1,0 +1,71 @@
+@import "./variables.scss";
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.primary-color {
+  color: $primary-color;
+}
+.side-spacing {
+  margin: 0 5px !important;
+}
+.section-background-color {
+  background-color: $primary-background-color;
+}
+.heading-color {
+  color: $secondary-color;
+}
+.peragraph-fontsize {
+  font-size: 18px;
+}
+.item-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.paper-size {
+  margin: 15px 4%;
+  padding: 5px;
+}
+.heading-alignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading-height {
+  height: 100px;
+}
+.card-color {
+  background-color: $secondary-background-color !important;
+  height: 100%;
+  width: 100%;
+}
+.card-color-two {
+  background-color: $primary-color !important;
+}
+.section-heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+.scrollTop {
+  position: fixed;
+  width: 40px;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  height: 40px;
+  color: $primary-color;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  &:hover {
+    opacity: 1;
+  }
+}
+.footer-width {
+  width: 100%;
+}

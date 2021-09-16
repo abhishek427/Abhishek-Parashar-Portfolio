@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Form.css";
+import "./form.scss";
 import emailjs from "emailjs-com";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
@@ -155,8 +155,8 @@ function Form() {
           />
           <small>{errors["msg"]}</small>
         </div>
-        <Button type="submit" variant="contained" color="secondary" size="large">
-          {flag === true ? <CircularProgress style={{ color: "white" }} /> : <strong>Send message</strong>}
+        <Button type="submit" variant="contained" className="send-btn" size="large">
+          {flag === true ? <CircularProgress className="circular-progress" /> : <strong>Send message</strong>}
         </Button>
       </form>
       <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">

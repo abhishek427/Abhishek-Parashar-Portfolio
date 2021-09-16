@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+#progressbar {
+  background-color: $progress-bar-bg-color;
+  padding: 3px;
+  border-radius: 13px;
+  margin-bottom: 18px;
+  > div {
+    background-color: $primary-color;
+    height: 10px;
+    border-radius: 13px;
+  }
+}
+.skill-value {
+  display: flex;
+  justify-content: flex-end;
+}
