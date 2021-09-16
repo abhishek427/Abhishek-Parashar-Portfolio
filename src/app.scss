@@ -3,8 +3,13 @@
 body {
   font-family: "Ubuntu", sans-serif;
 }
+.site-background {
+  background-color: $site-bg-color;
+}
 .primary-color {
   color: $primary-color;
+  font-size: larger !important;
+  font-weight: 900 !important;
 }
 .side-spacing {
   margin: 0 5px !important;
@@ -27,6 +32,7 @@ body {
 .paper-size {
   margin: 15px 4%;
   padding: 5px;
+  background-color: $paper-bg-color !important;
 }
 .heading-alignment {
   display: flex;

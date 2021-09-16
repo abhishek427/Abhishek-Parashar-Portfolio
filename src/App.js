@@ -31,7 +31,7 @@ function App() {
       <header>
         <TopBar />
       </header>
-      <main>
+      <main className="site-background">
         <AboutMe />
         <MyServices />
         <MySkills />
