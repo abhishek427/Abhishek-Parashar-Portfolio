@@ -28,13 +28,19 @@ function App() {
   window.addEventListener("scroll", checkScrollTop);
   return (
     <div className="item-position">
-      <TopBar />
-      <AboutMe />
-      <MyServices />
-      <MySkills />
-      <MyProject />
-      <ContactMe />
-      <Footer />
+      <header>
+        <TopBar />
+      </header>
+      <main>
+        <AboutMe />
+        <MyServices />
+        <MySkills />
+        <MyProject />
+        <ContactMe />
+      </main>
+      <footer className="footer-width">
+        <Footer />
+      </footer>
       <Grid container justify="flex-end" style={{ marginRight: "40px" }}>
         <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{ height: 40, width: 40, display: showScroll ? "flex" : "none", color: "crimson" }} />
       </Grid>
