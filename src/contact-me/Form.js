@@ -39,7 +39,7 @@ function Form() {
     setSubject("");
     if (validateForm() === false) {
       setFlag(true);
-      emailjs.sendForm("service_yjjgv3v", "template_yja62ud", e.target, process.env.REACT_APP_DATA_ENV).then(
+      emailjs.sendForm("service_nh6o1mi", "template_yja62ud", e.target, process.env.REACT_APP_DATA_ENV).then(
         (result) => {
           handleClickOpen();
           setFlag(false);
