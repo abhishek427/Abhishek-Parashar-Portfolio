@@ -94,7 +94,7 @@ function Form() {
       <form className="contact-form" onSubmit={sendEmail}>
         <div className="nameEmailContainer">
           <div className="nameContainer">
-            <label>Name</label>
+            <label className="heading-color">Name</label>
             <input
               type="text"
               id="name"
@@ -110,7 +110,7 @@ function Form() {
             <small>{errors["name"]}</small>
           </div>
           <div className="emailContainer">
-            <label>Email</label>
+            <label className="heading-color">Email</label>
             <input
               type="email"
               name="email"
@@ -126,7 +126,7 @@ function Form() {
             <small>{errors["email"]}</small>
           </div>
         </div>
-        <label>Subject</label>
+        <label className="heading-color">Subject</label>
         <input
           type="text"
           name="subject"
@@ -141,7 +141,7 @@ function Form() {
         />
         <small>{errors["subject"]}</small>
         <div className="messageContainer">
-          <label>Message</label>
+          <label className="heading-color">Message</label>
           <input
             type="text"
             name="message"
@@ -155,9 +155,11 @@ function Form() {
           />
           <small>{errors["msg"]}</small>
         </div>
-        <Button type="submit" variant="contained" className="send-btn" size="large">
-          {flag === true ? <CircularProgress className="circular-progress" /> : <strong>Send message</strong>}
-        </Button>
+        <div className="send-btn-container">
+          <Button type="submit" variant="contained" className="send-btn" size="large">
+            {flag === true ? <CircularProgress className="circular-progress" /> : <strong>Send message</strong>}
+          </Button>
+        </div>
       </form>
       <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
         <Grid container justify="center" alignItems="center">

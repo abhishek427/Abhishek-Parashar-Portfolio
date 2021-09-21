@@ -25,15 +25,17 @@ let contactData = [
 ];
 function ContactMe() {
   return (
-    <Paper elevation={3} className="paper-size" id="contact">
+    <Paper elevation={10} className="paper-size" id="contact">
       <Grid container justify="center" spacing={3}>
         <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
-          <Typography variant="h4">Contact me</Typography>
+          <Typography variant="h4" className="heading-color">
+            Contact me
+          </Typography>
           <Typography className="primary-color">get in touch</Typography>
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
-          <p className="section-heading">Get in Touch</p>
-          <p>Here is my contact info. Feel free to contact me.</p>
+          <p className="section-heading heading-color">Get in Touch</p>
+          <p className="heading-color">Here is my contact info. Feel free to contact me.</p>
           {contactData.map((data) => {
             return (
               <Grid container alignItems="center" className="contactData" key={data.key}>
@@ -41,21 +43,21 @@ function ContactMe() {
                   <Icon icon={data.icon} className="contact-me-icons" />
                 </Grid>
                 <Grid item xs={11}>
-                  <strong>{data.title}</strong>
-                  <p className="contact-value">{data.value}</p>
+                  <strong className="heading-color">{data.title}</strong>
+                  <p className="contact-value heading-color">{data.value}</p>
                 </Grid>
               </Grid>
             );
           })}
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
-          <p className="section-heading">Message Me</p>
+          <p className="section-heading heading-color">Message Me</p>
           <Form />
         </Grid>
 
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           <div>
-            <strong>Follow me on </strong>
+            <strong className="heading-color">Follow me on </strong>
           </div>
           {socialMediaData.map((data) => {
             return (

@@ -31,7 +31,7 @@ function MyServices() {
         <Carousel style={{ width: "100%", height: "100%" }}>
           {cardData.map((data) => {
             return (
-              <Card className="card-color">
+              <Card className="card-color" elevation={10}>
                 <CardContent className="card-content">
                   <div className="imageContner-project">
                     <img src={data.image} alt="" className="image-size-project" />
