@@ -9,7 +9,7 @@ import Footer from "./footer/Footer";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { Grid } from "@material-ui/core";
 import TopBar from "./top-bar/TopBar";
-
+import NewSER from "./my-services/NewServices";
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -33,10 +33,12 @@ function App() {
       </header>
       <main className="site-background">
         <AboutMe />
-        <MyServices />
+        <NewSER />
+        {/* <MyServices /> */}
         <MySkills />
         <MyProject />
         <ContactMe />
+        {/* <NewSER /> */}
       </main>
       <footer className="footer-width">
         <Footer />

@@ -1,0 +1,59 @@
+@import "../variables.scss";
+
+.flip-card {
+  background-color: transparent;
+  height: 240px;
+  margin-bottom: 3%;
+  perspective: 1000px;
+  &:hover {
+    .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card-front {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: $primary-color;
+  color: black;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 10px gray;
+  -moz-box-shadow: 0 3px 10px gray;
+  box-shadow: 0 3px 10px gray;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: $primary-color;
+  color: white;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+}
+.icon-size {
+  height: 70px;
+  width: 70px;
+  color: $secondary-color;
+}
