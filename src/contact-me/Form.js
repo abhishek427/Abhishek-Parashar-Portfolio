@@ -9,6 +9,8 @@ import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import { Button } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import { Icon } from "@iconify/react";
+import send from "@iconify-icons/mdi/send";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -157,7 +159,13 @@ function Form() {
         </div>
         <div className="send-btn-container">
           <Button type="submit" variant="contained" className="send-btn" size="large">
-            {flag === true ? <CircularProgress className="circular-progress" /> : <strong>Send message</strong>}
+            {flag === true ? (
+              <CircularProgress className="circular-progress" />
+            ) : (
+              <strong className="icon-heading-container">
+                Send message <Icon icon={send} style={{ marginLeft: "10px" }} />
+              </strong>
+            )}
           </Button>
         </div>
       </form>

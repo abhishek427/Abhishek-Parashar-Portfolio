@@ -6,6 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import myImage from "../images/me.jpeg";
 import Button from "@material-ui/core/Button";
 import ReactTypingEffect from "react-typing-effect";
+import { Icon } from "@iconify/react";
+import download from "@iconify-icons/mdi/download";
 
 const AboutMe = () => {
   return (
@@ -49,7 +51,9 @@ const AboutMe = () => {
               <div className="resume-button-container">
                 <a href="https://drive.google.com/file/d/1rASLmGgdrkJw8Q1KPmA2btG5mUaB3o39/view?usp=sharing">
                   <Button variant="contained" size="large" className="resume-btn">
-                    <strong>Download Resume</strong>
+                    <strong className="icon-heading-container">
+                      <Icon icon={download} style={{ marginRight: "10px" }} /> Download Resume
+                    </strong>
                   </Button>
                 </a>
               </div>
