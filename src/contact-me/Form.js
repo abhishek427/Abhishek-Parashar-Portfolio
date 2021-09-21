@@ -162,7 +162,7 @@ function Form() {
         </div>
       </form>
       <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
-        <Grid container justify="center" alignItems="center">
+        <Grid container justify="center" alignItems="center" className="menu-container">
           <Grid item xs={12}>
             <DialogTitle id="alert-dialog-slide-title">
               <div className="dialog-contant">Thank You for Messaging me</div>
@@ -177,7 +177,7 @@ function Form() {
             </div>
           </Grid>
         </Grid>
-        <DialogActions style={{ display: "flex", justifyContent: "center" }}>
+        <DialogActions style={{ display: "flex", justifyContent: "center" }} className="menu-container">
           <Button onClick={handleClose} variant="contained" color="secondary">
             <strong>Okay</strong>
           </Button>
