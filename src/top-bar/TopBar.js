@@ -76,7 +76,7 @@ function TopBar() {
             <Button onClick={handleClickOpen}>{open === false ? <Icon icon={menuIcon} className="mobile-top-bar-icon" /> : <CloseIcon className="mobile-top-bar-icon" />}</Button>
           </Grid>
           <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
-            <Grid container>
+            <Grid container className="mobile-menu-container">
               {navData.map((data) => {
                 return (
                   <Grid item lg={12} md={12} sm={12} xs={12} className="mobile-top-bar-item" key={data.key}>

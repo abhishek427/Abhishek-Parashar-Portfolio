@@ -7,6 +7,9 @@
   position: fixed;
   z-index: 9999;
 }
+.mobile-menu-container {
+  background-color: $primary-background-color;
+}
 .top-bar-item {
   display: flex;
   justify-content: center;
@@ -27,7 +30,7 @@
   color: $secondary-color;
 }
 .top-bar-text-mobile {
-  color: $primary-color;
+  color: $secondary-color;
 }
 .top-bar-link {
   height: 100%;
