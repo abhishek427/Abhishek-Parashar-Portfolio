@@ -62,8 +62,8 @@ function ContactMe() {
           <div className="social-icon-container">
             {socialMediaData.map((data) => {
               return (
-                <div className="hover-high-effect">
-                  <a href={data.link} key={data.key} style={{ textDecoration: "none" }}>
+                <div className="hover-high-effect" key={data.key}>
+                  <a href={data.link} style={{ textDecoration: "none" }}>
                     <Icon icon={data.icon} className="socal-media-icons" />
                   </a>
                 </div>
