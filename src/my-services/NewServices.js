@@ -2,17 +2,18 @@ import React from "react";
 import "./NewService.scss";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
 import { Icon } from "@iconify/react";
 import languageJavascript from "@iconify-icons/mdi/language-javascript";
 import wheelchairAccessibility from "@iconify-icons/mdi/wheelchair-accessibility";
 import cogsIcon from "@iconify-icons/mdi/cogs";
+import js from "../images/js.jpeg";
+import acc from "../images/acc.jpeg";
+import test from "../images/test.jpeg";
 
 let cardData = [
-  { key: 1, title: "Web Developer", icon: languageJavascript, subheading: "I have a good knowledge of JavaScript and have done many projects on javascript related frameworks and libraries." },
-  { key: 2, title: "Accessibility developer", icon: wheelchairAccessibility, subheading: "I worked on a couple of projects to make Accessibility for the Differently abled people and having good knowledge of WCAG 2.0 and WCAG 3.0." },
-  { key: 3, title: "Tester", icon: cogsIcon, subheading: "I have good knowledge of writing unit tests, functional tests, and integration testing. Using mocha chai and Cypress.io" },
+  { key: 1, title: "Web Developer", icon: languageJavascript, img: js, subheading: "I have a good knowledge of JavaScript and have done many projects on javascript related frameworks and libraries." },
+  { key: 2, title: "Accessibility developer", icon: wheelchairAccessibility, img: acc, subheading: "I worked on a couple of projects to make Accessibility for the Differently abled people and having good knowledge of WCAG 2.0 and WCAG 3.0." },
+  { key: 3, title: "Tester", icon: cogsIcon, img: test, subheading: "I have good knowledge of writing unit tests, functional tests, and integration testing. Using mocha chai and Cypress.io" },
 ];
 const NewServices = () => {
   return (
@@ -24,12 +25,12 @@ const NewServices = () => {
         <Typography className="primary-color">what I provide</Typography>
       </Grid>
 
-      {cardData.map((data, index) => {
+      {cardData.map((data) => {
         return (
           <Grid item lg={3} md={3} sm={12} xs={12} className="card-spacing" key={data.key}>
             <div className="flip-card">
               <div className="flip-card-inner">
-                <div className="flip-card-front">
+                <div className="flip-card-front" style={{ backgroundImage: `url(${data.img})`, backgroundSize: "contain" }}>
                   <div>
                     <Icon icon={data.icon} className="icon-size" />
                   </div>
@@ -43,17 +44,6 @@ const NewServices = () => {
                 </div>
               </div>
             </div>
-            {/* <Card className={index % 2 ? "card-color-two" : "card-color"} elevation={10}>
-              <CardContent className="card-content">
-                <span className="icon-size">
-                  <Icon icon={data.icon} className="my-services-icon-style" />
-                </span>
-                <p className="heading-color card-heading">{data.title}</p>
-                <div className="skill-heading-container">
-                  <p className="heading-color">{data.subheading}</p>
-                </div>
-              </CardContent>
-            </Card> */}
           </Grid>
         );
       })}
@@ -62,19 +52,3 @@ const NewServices = () => {
 };
 
 export default NewServices;
-{
-  /* <div>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img alt="Avatar" style={{ width: "300px", height: "300px" }} />
-          </div>
-          <div className="flip-card-back">
-            <h1>John Doe</h1>
-            <p>Architect Engineer</p>
-            <p>We love that guy</p>
-          </div>
-        </div>
-      </div>
-    </div> */
-}

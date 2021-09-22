@@ -51,3 +51,6 @@
   width: 70px;
   color: $secondary-color;
 }
+.flip-card-front ::before {
+  opacity: 0.8;
+}
