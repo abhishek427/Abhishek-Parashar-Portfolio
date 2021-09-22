@@ -30,12 +30,14 @@ const NewServices = () => {
           <Grid item lg={3} md={3} sm={12} xs={12} className="card-spacing" key={data.key}>
             <div className="flip-card">
               <div className="flip-card-inner">
-                <div className="flip-card-front" style={{ backgroundImage: `url(${data.img})`, backgroundSize: "contain" }}>
+                <div className="flip-card-front" style={{ backgroundImage: `url(${data.img})` }}>
                   <div>
-                    <Icon icon={data.icon} className="icon-size" />
-                  </div>
-                  <div>
-                    <p className="heading-color card-heading">{data.title}</p>
+                    <div>
+                      <Icon icon={data.icon} className="icon-size" />
+                    </div>
+                    <div>
+                      <p className="heading-color card-heading">{data.title}</p>
+                    </div>
                   </div>
                 </div>
                 <div className="flip-card-back">
