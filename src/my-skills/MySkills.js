@@ -33,7 +33,7 @@ function MySkills() {
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           {skillData.map((data) => {
             return (
-              <div key={data.key} className="progress-bar-container">
+              <div key={data.key} className="hover-effect">
                 <Grid container>
                   <Grid item xs={6} className="heading-color">
                     {data.title}

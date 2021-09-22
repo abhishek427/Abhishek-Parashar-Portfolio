@@ -38,7 +38,7 @@ function ContactMe() {
           <p className="heading-color">Here is my contact info. Feel free to contact me.</p>
           {contactData.map((data) => {
             return (
-              <Grid container alignItems="center" className="contactData" key={data.key}>
+              <Grid container alignItems="center" className="contactData hover-effect" key={data.key}>
                 <Grid item xs={1}>
                   <Icon icon={data.icon} className="contact-me-icons" />
                 </Grid>
@@ -59,14 +59,17 @@ function ContactMe() {
           <div>
             <strong className="heading-color">Follow me on </strong>
           </div>
-          {socialMediaData.map((data) => {
-            return (
-              <a href={data.link} key={data.key} style={{ textDecoration: "none" }}>
-                {" "}
-                <Icon icon={data.icon} className="socal-media-icons" />
-              </a>
-            );
-          })}
+          <div className="social-icon-container">
+            {socialMediaData.map((data) => {
+              return (
+                <div className="hover-effect-social-icon">
+                  <a href={data.link} key={data.key} style={{ textDecoration: "none" }}>
+                    <Icon icon={data.icon} className="socal-media-icons" />
+                  </a>
+                </div>
+              );
+            })}
+          </div>
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing"></Grid>
       </Grid>

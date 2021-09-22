@@ -29,3 +29,12 @@
   width: 30px;
   margin: 5px;
 }
+.social-icon-container {
+  display: flex;
+}
+.hover-effect-social-icon {
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

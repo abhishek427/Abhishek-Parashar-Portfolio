@@ -158,11 +158,11 @@ function Form() {
           <small>{errors["msg"]}</small>
         </div>
         <div className="send-btn-container">
-          <Button type="submit" variant="contained" className="send-btn" size="large">
+          <Button type="submit" variant="contained" className="send-btn hover-effect" size="large">
             {flag === true ? (
               <CircularProgress className="circular-progress" />
             ) : (
-              <strong className="icon-heading-container">
+              <strong className="icon-heading-container ">
                 Send message <Icon icon={send} style={{ marginLeft: "10px" }} />
               </strong>
             )}

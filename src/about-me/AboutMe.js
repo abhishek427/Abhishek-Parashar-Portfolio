@@ -50,7 +50,7 @@ const AboutMe = () => {
               </div>
               <div className="resume-button-container">
                 <a href="https://drive.google.com/file/d/1rASLmGgdrkJw8Q1KPmA2btG5mUaB3o39/view?usp=sharing">
-                  <Button variant="contained" size="large" className="resume-btn">
+                  <Button variant="contained" size="large" className="resume-btn hover-effect">
                     <strong className="icon-heading-container">
                       <Icon icon={download} style={{ marginRight: "10px" }} /> Download Resume
                     </strong>
