@@ -28,7 +28,7 @@ function ContactMe() {
     <Paper elevation={10} className="paper-size" id="contact">
       <Grid container justify="center" spacing={3}>
         <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
-          <Typography variant="h4" className="heading-color">
+          <Typography variant="h4" className="heading-color hover-high-effect">
             Contact me
           </Typography>
           <Typography className="primary-color">get in touch</Typography>
@@ -51,7 +51,7 @@ function ContactMe() {
           })}
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
-          <p className="section-heading heading-color">Message Me</p>
+          <p className="section-heading heading-color ">Message Me</p>
           <Form />
         </Grid>
 
@@ -62,7 +62,7 @@ function ContactMe() {
           <div className="social-icon-container">
             {socialMediaData.map((data) => {
               return (
-                <div className="hover-effect-social-icon">
+                <div className="hover-high-effect">
                   <a href={data.link} key={data.key} style={{ textDecoration: "none" }}>
                     <Icon icon={data.icon} className="socal-media-icons" />
                   </a>

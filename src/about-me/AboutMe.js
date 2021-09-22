@@ -15,7 +15,7 @@ const AboutMe = () => {
       <Paper elevation={10} className="paper-size about-me-container" id="aboutMe">
         <Grid container justify="center">
           <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
-            <Typography variant="h4" className="heading-color">
+            <Typography variant="h4" className="heading-color hover-high-effect">
               About me
             </Typography>
             <Typography className="primary-color">who I am</Typography>

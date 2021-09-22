@@ -54,7 +54,7 @@ function TopBar() {
         <Grid container justify="center">
           {navData.map((data) => {
             return (
-              <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item hover-effect-social-icon" key={data.key}>
+              <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item hover-high-effect" key={data.key}>
                 <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true} className="top-bar-link">
                   <Button className="item-btn">
                     <strong className="top-bar-text">{data.title}</strong>

@@ -18,7 +18,7 @@ function MyServices() {
   return (
     <Grid container justify="center" className="section-background-color" id="service">
       <Grid item lg={12} md={12} sm={12} xs={12} style={{ marginTop: "3%" }} className="heading-alignment heading-height">
-        <Typography variant="h4" className="heading-color">
+        <Typography variant="h4" className="heading-color ">
           My Services
         </Typography>
         <Typography className="primary-color">what I provide</Typography>

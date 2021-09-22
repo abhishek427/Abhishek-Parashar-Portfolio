@@ -21,7 +21,7 @@ function MySkills() {
     <Paper elevation={10} className="paper-size" id="skill">
       <Grid container justify="center" spacing={3}>
         <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
-          <Typography variant="h4" className="heading-color">
+          <Typography variant="h4" className="heading-color hover-high-effect">
             My Skills
           </Typography>
           <Typography className="primary-color">What I know</Typography>

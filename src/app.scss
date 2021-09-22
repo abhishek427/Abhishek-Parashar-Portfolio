@@ -89,3 +89,9 @@ body {
     transform: scale(1.04);
   }
 }
+.hover-high-effect {
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
