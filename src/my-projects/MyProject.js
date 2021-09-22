@@ -25,7 +25,7 @@ function MyServices() {
         <Typography variant="h4" className="heading-color hover-high-effect">
           My Project
         </Typography>
-        <Typography className="primary-color">what I did</Typography>
+        <Typography className="primary-color">What I did</Typography>
       </Grid>
       <Grid item lg={12} md={12} sm={12} xs={12} className="project-card-spacing" style={{ width: "100%", height: "100%", marginBottom: "20px", marginLeft: "20px", marginRight: "20px" }}>
         <Carousel style={{ width: "100%", height: "100%" }}>

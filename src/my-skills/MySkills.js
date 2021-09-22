@@ -12,7 +12,7 @@ let skillData = [
   { key: 5, title: "Accessibility", width: "60%" },
   { key: 6, title: "HTML", width: "80%" },
   { key: 7, title: "CSS", width: "60%" },
-  { key: 8, title: "React Matrial UI", width: "80%" },
+  { key: 8, title: "React Material UI", width: "80%" },
   { key: 9, title: "SCSS", width: "60%" },
   { key: 10, title: "Cypress.io", width: "40%" },
 ];
