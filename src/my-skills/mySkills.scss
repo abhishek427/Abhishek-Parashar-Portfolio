@@ -15,3 +15,9 @@
   display: flex;
   justify-content: flex-end;
 }
+.progress-bar-container {
+  transition: transform 0.2s;
+}
+.progress-bar-container:hover {
+  transform: scale(1.1);
+}
