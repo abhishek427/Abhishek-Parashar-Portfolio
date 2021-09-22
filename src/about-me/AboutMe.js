@@ -20,7 +20,7 @@ const AboutMe = () => {
             </Typography>
             <Typography className="primary-color">who I am</Typography>
           </Grid>
-          <Grid item lg={4} md={4} sm={12} xs={12} className="image-container">
+          <Grid item lg={4} md={4} sm={12} xs={12} className="image-container hover-effect">
             <Paper elevation={10} className="my-image-paper-size">
               <img src={myImage} className="image-size" alt="Abhishek Parashar" />
             </Paper>

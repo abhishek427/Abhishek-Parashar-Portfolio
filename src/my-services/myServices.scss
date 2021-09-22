@@ -1,38 +1,65 @@
 @import "../variables.scss";
 
-.card-spacing {
-  margin: 5% 30px !important;
+.flip-card {
+  background-color: transparent;
+  height: 240px;
+  margin-bottom: 3%;
+  perspective: 1000px;
+  &:hover {
+    .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
 }
-.card-content {
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card-front {
+  position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
-}
-.card-heading {
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.my-services-icon-style {
-  width: 100% !important;
+  width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: $primary-color;
+  color: black;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::before {
+    background-image: url("./../images/js.jpeg");
+  }
+}
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: $primary-color;
+  color: white;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.icon-size {
+  height: 70px;
+  width: 70px;
   color: $secondary-color;
 }
-.card-color {
-  &:hover {
-    background-color: $primary-color !important;
-    color: $secondary-color !important;
-  }
+.flip-card-front ::before {
+  opacity: 0.8;
 }
-.card-color-two {
-  &:hover {
-    background-color: $secondary-background-color !important;
-    color: $secondary-color !important;
-  }
-}
-.skill-heading-container {
-  max-height: 90px;
-  overflow: scroll;
-  overflow-x: hidden;
+.card-spacing {
+  margin: 5% 30px !important;
 }

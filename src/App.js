@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./app.scss";
 import AboutMe from "./about-me/AboutMe";
-import MyServices from "./my-services/MyServices";
 import MySkills from "./my-skills/MySkills";
 import ContactMe from "./contact-me/ContactMe";
 import MyProject from "./my-projects/MyProject";
@@ -9,7 +8,7 @@ import Footer from "./footer/Footer";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { Grid } from "@material-ui/core";
 import TopBar from "./top-bar/TopBar";
-import NewSER from "./my-services/NewServices";
+import MyServices from "./my-services/MyServices";
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -33,12 +32,10 @@ function App() {
       </header>
       <main className="site-background">
         <AboutMe />
-        <NewSER />
-        {/* <MyServices /> */}
+        <MyServices />
         <MySkills />
         <MyProject />
         <ContactMe />
-        {/* <NewSER /> */}
       </main>
       <footer className="footer-width">
         <Footer />
