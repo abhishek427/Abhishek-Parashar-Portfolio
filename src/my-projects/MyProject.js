@@ -38,7 +38,7 @@ function MyServices() {
                   </div>
                   <p className="heading-color card-heading hover-high-effect">{data.title}</p>
                   <div className="project-heading-container">
-                    <p className="heading-color hover-effect">{data.subheading}</p>
+                    <p className="heading-color">{data.subheading}</p>
                   </div>
                 </CardContent>
               </Card>
