@@ -34,11 +34,11 @@ function MyServices() {
               <Card className="card-color" elevation={10} key={data.key}>
                 <CardContent className="card-content">
                   <div className="imageContner-project">
-                    <img src={data.image} alt="" className="image-size-project" />
+                    <img src={data.image} alt="" className="image-size-project hover-effect" />
                   </div>
-                  <p className="heading-color card-heading">{data.title}</p>
+                  <p className="heading-color card-heading hover-high-effect">{data.title}</p>
                   <div className="project-heading-container">
-                    <p className="heading-color">{data.subheading}</p>
+                    <p className="heading-color hover-effect">{data.subheading}</p>
                   </div>
                 </CardContent>
               </Card>

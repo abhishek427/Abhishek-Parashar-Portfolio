@@ -41,7 +41,7 @@ function App() {
         <Footer />
       </footer>
       <Grid container justify="flex-end" style={{ marginRight: "40px" }}>
-        <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? "flex" : "none" }} />
+        <FaArrowCircleUp className="scrollTop hover-high-effect" onClick={scrollTop} style={{ display: showScroll ? "flex" : "none" }} />
       </Grid>
     </div>
   );
