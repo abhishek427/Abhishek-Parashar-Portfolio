@@ -31,7 +31,7 @@ const NewServices = () => {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front" style={{ backgroundImage: `url(${data.img})` }}>
-                  <div>
+                  <div className="over-lay">
                     <div>
                       <Icon icon={data.icon} className="icon-size" />
                     </div>
