@@ -33,7 +33,7 @@ const NewServices = () => {
                 <div className="flip-card-front" style={{ backgroundImage: `url(${data.img})` }}>
                   <div className="over-lay">
                     <div>
-                      <Icon icon={data.icon} className="icon-size" />
+                      <Icon icon={data.icon} className="icon-size" style={{ color: data.key === 1 ? "#f0db4f" : "white" }} />
                     </div>
                     <div>
                       <p className="heading-color card-heading">{data.title}</p>
