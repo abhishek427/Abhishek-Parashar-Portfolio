@@ -102,7 +102,7 @@ function Form() {
               id="name"
               name="name"
               placeholder="Enter your name..."
-              className={errors["name"] ? "errorClass" : ""}
+              className={(errors["name"] ? "errorClass" : "", "hover-effect")}
               value={name}
               onChange={(e) => {
                 setName(e.target.value);
@@ -119,7 +119,7 @@ function Form() {
               value={email}
               placeholder="Enter your email..."
               id="email"
-              className={errors["email"] ? "errorClass" : ""}
+              className={(errors["email"] ? "errorClass" : "", "hover-effect")}
               onChange={(e) => {
                 setEmail(e.target.value);
                 validate();
@@ -135,7 +135,7 @@ function Form() {
           value={subject}
           placeholder="Enter the subject of this message..."
           id="subject"
-          className={errors["subject"] ? "errorClass" : ""}
+          className={(errors["subject"] ? "errorClass" : "", "hover-effect")}
           onChange={(e) => {
             setSubject(e.target.value);
             validate();
@@ -149,7 +149,8 @@ function Form() {
             name="message"
             value={msg}
             id="msg"
-            className={errors["msg"] ? "errorClass" : ""}
+            placeholder="Type whatever you want..."
+            className={(errors["msg"] ? "errorClass" : "", "hover-effect")}
             onChange={(e) => {
               setMsg(e.target.value);
               validate();
