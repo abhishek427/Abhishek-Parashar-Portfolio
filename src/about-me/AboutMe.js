@@ -30,7 +30,7 @@ const AboutMe = () => {
               <div className="side-spacing-aboutme-text">
                 <div className="aboutme-text-style">
                   <Grid container>
-                    <Grid item lg={1} md={1} sm={12} xs={12} className="heading-color">
+                    <Grid item lg={1} md={1} sm={12} xs={12} className="heading-color" style={{ minWidth: "66px" }}>
                       I am
                     </Grid>
                     <Grid item lg={11} md={11} sm={12} xs={12}>
