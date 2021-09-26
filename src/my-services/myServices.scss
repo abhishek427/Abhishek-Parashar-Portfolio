@@ -35,9 +35,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &::before {
-    background-image: url("./../images/js.jpeg");
-  }
 }
 .flip-card-back {
   position: absolute;
