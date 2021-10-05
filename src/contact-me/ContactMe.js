@@ -31,7 +31,7 @@ function ContactMe() {
           <Typography variant="h4" className="heading-color hover-high-effect">
             Contact me
           </Typography>
-          <Typography className="primary-color">Get in touch</Typography>
+          <Typography className="primary-color page-sub-heading">Get in touch</Typography>
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           <p className="section-heading heading-color">Get in Touch</p>

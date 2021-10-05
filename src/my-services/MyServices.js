@@ -22,7 +22,7 @@ const NewServices = () => {
         <Typography variant="h4" className="heading-color hover-high-effect">
           My Services
         </Typography>
-        <Typography className="primary-color">What I provide</Typography>
+        <Typography className="primary-color page-sub-heading">What I provide</Typography>
       </Grid>
 
       {cardData.map((data) => {
