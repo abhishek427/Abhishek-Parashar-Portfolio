@@ -5,17 +5,18 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 
 let skillData = [
-  { key: 1, title: "React js", width: "70%" },
-  { key: 2, title: "Redux", width: "60%" },
-  { key: 8, title: "React Material UI", width: "80%" },
-  { key: 4, title: "JavaScript", width: "70%" },
-  { key: 6, title: "HTML", width: "80%" },
-  { key: 5, title: "Accessibility", width: "60%" },
-  { key: 7, title: "CSS", width: "60%" },
-  { key: 9, title: "SCSS", width: "60%" },
-  { key: 3, title: "Angular", width: "40%" },
-
-  { key: 10, title: "Cypress.io", width: "40%" },
+  { key: 1, title: "React js", width: "85%" },
+  { key: 2, title: "Redux", width: "85%" },
+  { key: 3, title: "React Material UI", width: "80%" },
+  { key: 4, title: "JavaScript", width: "80%" },
+  { key: 5, title: "HTML", width: "80%" },
+  { key: 6, title: "Accessibility", width: "70%" },
+  { key: 7, title: "CSS", width: "75%" },
+  { key: 8, title: "SCSS", width: "60%" },
+  { key: 9, title: "Git", width: "70%" },
+  { key: 10, title: "Angular", width: "40%" },
+  { key: 11, title: "Cypress.io", width: "40%" },
+  { key: 12, title: "Vue Js", width: "40%" },
 ];
 function MySkills() {
   return (
