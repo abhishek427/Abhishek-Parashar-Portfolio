@@ -13,7 +13,7 @@ const AboutMe = () => {
   return (
     <div>
       <Paper elevation={10} className="paper-size about-me-container" id="aboutMe">
-        <Grid container justify="center">
+        <Grid container justify="center" data-aos="fade-down">
           <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
             <Typography variant="h4" className="heading-color hover-high-effect">
               About me

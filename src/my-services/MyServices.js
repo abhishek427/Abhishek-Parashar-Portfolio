@@ -28,7 +28,7 @@ const NewServices = () => {
       {cardData.map((data) => {
         return (
           <Grid item lg={3} md={3} sm={12} xs={12} className="card-spacing" key={data.key}>
-            <div className="flip-card">
+            <div className="flip-card" data-aos="zoom-in-up">
               <div className="flip-card-inner">
                 <div className="flip-card-front" style={{ backgroundImage: `url(${data.img})` }}>
                   <div className="over-lay">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./app.scss";
 import AboutMe from "./about-me/AboutMe";
 import MySkills from "./my-skills/MySkills";
@@ -9,9 +9,14 @@ import { FaArrowCircleUp } from "react-icons/fa";
 import { Grid } from "@material-ui/core";
 import TopBar from "./top-bar/TopBar";
 import MyServices from "./my-services/MyServices";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [showScroll, setShowScroll] = useState(false);
-
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400) {
       setShowScroll(true);

@@ -15,7 +15,7 @@ let skillData = [
   { key: 8, title: "SCSS", width: "60%" },
   { key: 9, title: "Git", width: "70%" },
   { key: 10, title: "Angular", width: "40%" },
-  { key: 11, title: "Cypress.io", width: "40%" },
+  { key: 11, title: "Cypress.io", width: "50%" },
   { key: 12, title: "Vue Js", width: "40%" },
 ];
 function MySkills() {
@@ -37,7 +37,7 @@ function MySkills() {
         {skillData.map((data) => {
           return (
             <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing-my-skill" key={data.key}>
-              <div className="hover-effect">
+              <div className="hover-effect" data-aos="zoom-in">
                 <Grid container>
                   <Grid item xs={6} className="heading-color">
                     {data.title}
