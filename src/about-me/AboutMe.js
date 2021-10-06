@@ -52,7 +52,10 @@ const AboutMe = () => {
                 <a href="https://drive.google.com/file/d/1be_IvdrA2_d1lh-Fms6Y62v4YLbIBRyZ/view?usp=sharing">
                   <Button variant="contained" size="large" className="resume-btn hover-effect">
                     <strong className="icon-heading-container">
-                      <Icon icon={download} style={{ marginRight: "10px" }} /> Download Resume
+                      <span data-aos="flip-down">
+                        <Icon icon={download} style={{ marginRight: "10px", display: "flex" }} />
+                      </span>{" "}
+                      Download Resume
                     </strong>
                   </Button>
                 </a>
