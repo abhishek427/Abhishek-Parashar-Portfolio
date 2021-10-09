@@ -21,7 +21,7 @@ const AboutMe = () => {
             <Typography className="primary-color page-sub-heading">Who I am</Typography>
           </Grid>
           <Grid item lg={4} md={4} sm={12} xs={12} className="image-container hover-effect">
-            <Paper elevation={10} className="my-image-paper-size">
+            <Paper elevation={10} className="my-image-paper-size" data-aos="flip-down">
               <img src={myImage} className="image-size" alt="Abhishek Parashar" />
             </Paper>
           </Grid>
@@ -49,7 +49,7 @@ const AboutMe = () => {
                 </Typography>
               </div>
               <div className="resume-button-container">
-                <a href="https://drive.google.com/file/d/1be_IvdrA2_d1lh-Fms6Y62v4YLbIBRyZ/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/19DJJBzHljdLoOqwN47abLqDJYDNjc1zI/view?usp=sharing">
                   <Button variant="contained" size="large" className="resume-btn hover-effect">
                     <strong className="icon-heading-container">
                       <span data-aos="flip-down">
