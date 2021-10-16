@@ -187,7 +187,7 @@ function Form() {
           </Grid>
         </Grid>
         <DialogActions style={{ display: "flex", justifyContent: "center" }} className="menu-container">
-          <Button onClick={handleClose} variant="contained" color="secondary">
+          <Button onClick={handleClose} variant="contained" className="ok-btn">
             <strong>Okay</strong>
           </Button>
         </DialogActions>
