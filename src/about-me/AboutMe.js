@@ -43,8 +43,9 @@ const AboutMe = () => {
               </div>
               <div className="side-spacing-aboutme">
                 <Typography variant="inherit" className="peragraph-fontsize heading-color">
-                  I have done Post Graduate Diploma in Computer Applications (PGDCA) post-graduate, B.tech in Computer Science Branch and currently working for QA Infotech, Noida.
-                  <p> I have a total work experience of Two years in web application development that includes JavaScript, HTML, CSS.</p> In addition to these, I have got some of the latest technologies and tools like Git, Jira, Postman, etc. in his skill set. Some of the programming languages and frameworks that he has hands-on are React Js, Redux, Angular, Cypress.io, etc.
+                  I have done Post Graduate Diploma in Computer Applications (PGDCA), And B.tech in Computer Science Branch and currently working for Qualitest (QA Infotech), Noida.
+                  <p> I have a total work experience of Two years in web application development that includes React Js, JavaScript, HTML, CSS.</p>
+                  <p> In addition to these, I have experience in some of the latest technologies and tools like Git, Jira, Postman, etc. Some of the programming languages and frameworks that I have hands-on are React Js, Redux, Angular, Cypress.io, etc.</p>
                   <p> I am looking forward to adding Design Patterns, Data Structures, Nodejs, React Native, and Python near future.</p>
                 </Typography>
               </div>
