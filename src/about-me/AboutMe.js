@@ -49,8 +49,8 @@ const AboutMe = () => {
                   <p> I am looking forward to adding Design Patterns, Data Structures, Nodejs, React Native, and Python near future.</p>
                 </Typography>
               </div>
-              <div className="resume-button-container">
-                <a href="https://drive.google.com/file/d/1qFN6bvgpj_5diS0ZNReZRxwcTSiyhAEU/view?usp=sharing">
+              <div className="resume-button-container" data-aos="flip-up">
+                <a href="https://drive.google.com/file/d/1LCv0-iwtlHX07vd1hUTNFNX8Ut02xQ4m/view?usp=sharing">
                   <Button variant="contained" size="large" className="resume-btn hover-effect">
                     <strong className="icon-heading-container">
                       <span data-aos="flip-down">
