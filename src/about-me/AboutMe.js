@@ -43,14 +43,14 @@ const AboutMe = () => {
               </div>
               <div className="side-spacing-aboutme">
                 <Typography variant="inherit" className="peragraph-fontsize heading-color">
-                  I have done Post Graduate Diploma in Computer Applications (PGDCA), And B.tech in Computer Science Branch and currently working for Qualitest (QA Infotech), Noida.
-                  <p> I have a total work experience of Two years in web application development that includes React Js, JavaScript, HTML, CSS.</p>
+                  I have done Post Graduate Diploma in Computer Applications (PGDCA), And B.tech in Computer Science Branch and currently working for To The New, Noida.
+                  <p> I have a total work experience of Two and half years in web application development that includes React Js, JavaScript, HTML, CSS.</p>
                   <p> In addition to these, I have experience in some of the latest technologies and tools like Git, Jira, Postman, etc. Some of the programming languages and frameworks that I have hands-on are React Js, Redux, Angular, Cypress.io, etc.</p>
                   <p> I am looking forward to adding Design Patterns, Data Structures, Nodejs, React Native, and Python near future.</p>
                 </Typography>
               </div>
               <div className="resume-button-container" data-aos="flip-up">
-                <a href="https://drive.google.com/file/d/1U6q-cBRmVT0zGFt8K7ZchJfo4_K6-ACn/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1Uw5Vc7Bv4ERPLrmb986LZJqlB4_9clvX/view?usp=sharing">
                   <Button variant="contained" size="large" className="resume-btn hover-effect">
                     <strong className="icon-heading-container">
                       <span data-aos="flip-down">
