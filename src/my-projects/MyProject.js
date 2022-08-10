@@ -13,11 +13,11 @@ import Angular from "../images/Angular.png";
 import doctor from "../images/doctor.jpg";
 
 let cardData = [
-  { key: 1, title: "Health Care Site", image: sonu, subheading: "Working with Actor Sonu Sood to bulid a platform which can help millions of poor peoples who can't afford their surgery expenses ,Techstack used- React js, Redux, Node js ,express js." },
-  { key: 2, title: "Education Solution", image: education, subheading: "Education LMS is a K-5 solution for the Montessori school education system. The role based solution enables SuperAdmin, Admin, Teacher  and parents roles to view respective modules . Functionality includes creating online schools, admitting students, creating classes, creating curriculum, task assignments and evaluation." },
-  { key: 3, title: "Mental Health", image: mental, subheading: "In this project, Admin helps the user to heal the mental issue by gathering the data from the client by filling the form and give some suggestions for better leaving and also provide music for relaxation.Tech use - React js, Redux, stripe for payment, etc." },
-  { key: 4, title: "Dr./Pasent Project", image: doctor, subheading: "In the nutshell in this Project,The Doctor prescribed the medication to the patient , and the insurance manager clear the bill of the medication.Techstack used- React js, Redux,Angular,React unit testing." },
-  { key: 5, title: "Accessibility", image: acc, subheading: "I have done two projects in Accessibility Developer and give 1000+ Accessibility-related recommendations in various projects." },
+  { key: 1, title: "Health Care Site", image: sonu, subheading: "Working with Sonu Sood to build a platform that can help millions of poor people who can't afford their surgery expenses,Techstack used- React js, Redux, Node js ,express js." },
+  { key: 2, title: "Education Solution", image: education, subheading: "Education LMS is a K-5 solution for the Montessori school education system. The role-based solution enables SuperAdmin, Admin, Teacher, and parents roles to view respective modules. Functionality includes creating online schools, admitting students, creating classes, creating curriculum, task assignments, and evaluation." },
+  { key: 3, title: "Mental Health", image: mental, subheading: "In this project, Admin helps the user to heal the mental issue by gathering the data from the client by filling the form and giving some suggestions for better leaving, and also providing music for relaxation.Tech use - React js, Redux, stripe for payment, etc." },
+  { key: 4, title: "Dr./Pasent Project", image: doctor, subheading: "In the nutshell in this Project, The Doctor prescribed the medication to the patient, and the insurance manager clear the bill for the medication.Techstack used- React js, Redux,Angular,React unit testing." },
+  { key: 5, title: "Accessibility", image: acc, subheading: "I have done Three projects in Accessibility Developer and given 1000+ Accessibility-related recommendations in Two projects and Develop one project according to Accessibility." },
   { key: 6, title: "Angular", image: Angular, subheading: "I have done two small projects in Angular as well and have good knowledge of Angular.And also worked on the angular matrial UI." },
 ];
 function MyServices() {
