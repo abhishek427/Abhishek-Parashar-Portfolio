@@ -31,7 +31,7 @@ function MySkills() {
         <Grid item lg={12} md={12} sm={12} xs={12} className="side-spacing-my-skill">
           <p className="section-heading heading-color my-skill-heading">My creative skills & experiences.</p>
           <p className="heading-color my-skill-text" style={{ paddingBottom: "15px" }}>
-            I have 2.6 plus years of industry experience as a React and Front-end developer. And having Hands-on, comprehensive knowledge of agile methodologies and web-based applications, and Proven ability to work on multiple projects while meeting challenging deadlines.These are the following technology I know -
+            I have 3 plus years of industry experience as a React and Front-end developer. And having Hands-on, comprehensive knowledge of agile methodologies and web-based applications, and Proven ability to work on multiple projects while meeting challenging deadlines.These are the following technology I know -
           </p>
         </Grid>
         {skillData.map((data) => {
