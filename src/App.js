@@ -4,6 +4,7 @@ import AboutMe from "./about-me/AboutMe";
 import MySkills from "./my-skills/MySkills";
 import ContactMe from "./contact-me/ContactMe";
 import MyProject from "./my-projects/MyProject";
+import MyAwards from "./my-awards/MyAwards";
 import Footer from "./footer/Footer";
 import { FaArrowCircleUp } from "react-icons/fa";
 import { Grid } from "@material-ui/core";
@@ -40,6 +41,7 @@ function App() {
         <MyServices />
         <MySkills />
         <MyProject />
+        <MyAwards />
         <ContactMe />
       </main>
       <footer className="footer-width">
