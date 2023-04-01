@@ -21,7 +21,8 @@
 }
 .item-btn {
   height: 100%;
-  width: 100%;
+  width: 130px;
+  margin: 0 10px;
   color: $secondary-color;
 }
 .top-bar-text {
@@ -31,10 +32,7 @@
 .top-bar-text-mobile {
   color: $secondary-color;
 }
-.top-bar-link {
-  height: 100%;
-  width: 100%;
-}
+
 .mobile-button-container {
   display: flex;
   justify-content: flex-end;

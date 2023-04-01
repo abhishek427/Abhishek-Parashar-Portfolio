@@ -12,6 +12,7 @@ import TopBar from "./top-bar/TopBar";
 import MyServices from "./my-services/MyServices";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import MyCourses from "./courses/MyCourses";
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -42,6 +43,7 @@ function App() {
         <MySkills />
         <MyProject />
         <MyAwards />
+        {/* <MyCourses /> */}
         <ContactMe />
       </main>
       <footer className="footer-width">
