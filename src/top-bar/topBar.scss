@@ -17,7 +17,6 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  border-bottom: 0.5px solid gray;
 }
 .item-btn {
   height: 100%;
@@ -49,6 +48,9 @@
   color: $secondary-color;
 }
 .mobile-top-bar-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 100%;
 }
