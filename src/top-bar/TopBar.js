@@ -19,11 +19,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       display: "flex",
       height: "100%",
+      justifyContent: "center",
+      width: "75%",
     },
   },
   sectionMobile: {
     display: "flex",
     height: "100%",
+    width: "100%",
     [theme.breakpoints.up("md")]: {
       display: "none",
     },
@@ -39,7 +42,8 @@ function TopBar() {
     { key: 3, offset: -73, to: "skill", title: "My Skills" },
     { key: 4, offset: -57, to: "project", title: "My Projects" },
     { key: 5, offset: -73, to: "awards", title: "My Awards" },
-    { key: 6, offset: -57, to: "contact", title: "Contact me" },
+    // { key: 6, offset: -57, to: "courses", title: "My Courses" },
+    { key: 7, offset: -57, to: "contact", title: "Contact me" },
   ];
   const handleClickOpen = () => {
     setOpen(true);
@@ -50,18 +54,18 @@ function TopBar() {
   };
 
   return (
-    <AppBar className="top-bar-container">
+    <div className="top-bar-container">
       <div className={classes.sectionDesktop}>
         <Grid container justify="center">
           {navData.map((data) => {
             return (
-              <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item hover-high-effect" key={data.key}>
-                <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true} className="top-bar-link">
-                  <Button className="item-btn">
-                    <strong className="top-bar-text">{data.title}</strong>
-                  </Button>
-                </Link>
-              </Grid>
+              // <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item hover-high-effect" key={data.key}>
+              <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true}>
+                <Button className="item-btn hover-high-effect">
+                  <strong className="top-bar-text">{data.title}</strong>
+                </Button>
+              </Link>
+              // </Grid>
             );
           })}
         </Grid>
@@ -93,7 +97,7 @@ function TopBar() {
           </Dialog>
         </Grid>
       </div>
-    </AppBar>
+    </div>
   );
 }
 
