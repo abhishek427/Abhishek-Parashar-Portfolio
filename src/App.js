@@ -12,13 +12,38 @@ import TopBar from "./top-bar/TopBar";
 import MyServices from "./my-services/MyServices";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import MyCourses from "./courses/MyCourses";
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
+  const [theme, setTheme] = useState(1);
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === 1) {
+      root.style.setProperty("--primary-color-update", "#ff3054");
+      root.style.setProperty("--secondary-color-update", "#ffffff");
+      root.style.setProperty("--primary-background-color-update", "#10044a");
+      root.style.setProperty("--secondary-background-color-update", "#7729ee");
+      root.style.setProperty("--error-color-update", "#ff3054");
+      root.style.setProperty("--progress-bar-bg-color-update", "#ffffff");
+      root.style.setProperty("--paper-bg-color-update", "#10044a");
+      root.style.setProperty("--site-bg-color-update", "#d4ccd9");
+    } else if (theme === 2) {
+      root.style.setProperty("--primary-color-update", "#CA005E");
+      root.style.setProperty("--secondary-color-update", "white");
+      root.style.setProperty("--primary-background-color-update", "#159895");
+      root.style.setProperty("--secondary-background-color-update", "#245953");
+      root.style.setProperty("--error-color-update", "pink");
+      root.style.setProperty("--progress-bar-bg-color-update", "#ffffff");
+      root.style.setProperty("--paper-bg-color-update", "#245953");
+      root.style.setProperty("--site-bg-color-update", "#FFEAEA");
+    }
+  }, [theme]);
+
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400) {
       setShowScroll(true);
@@ -35,7 +60,7 @@ function App() {
   return (
     <div className="item-position">
       <header>
-        <TopBar />
+        <TopBar theme={theme} setTheme={setTheme} />
       </header>
       <main className="site-background">
         <AboutMe />

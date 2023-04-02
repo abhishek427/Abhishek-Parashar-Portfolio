@@ -1,8 +1,8 @@
-$primary-color: #ff3054;
-$secondary-color: white;
-$primary-background-color: #10044a;
-$secondary-background-color: #7729ee;
-$error-color: #ff3054;
-$progress-bar-bg-color: white;
-$paper-bg-color: #10044a;
-$site-bg-color: #d4ccd9;
+$primary-color: var(--primary-color-update);
+$secondary-color: var(--secondary-color-update);
+$primary-background-color: var(--primary-background-color-update);
+$secondary-background-color: var(--secondary-background-color-update);
+$error-color: var(--error-color-update);
+$progress-bar-bg-color: var(--progress-bar-bg-color-update);
+$paper-bg-color: var(--paper-bg-color-update);
+$site-bg-color: var(--site-bg-color-update);

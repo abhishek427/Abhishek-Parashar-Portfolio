@@ -3,12 +3,16 @@ import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import "./topBar.scss";
 import { Link } from "react-scroll";
-import AppBar from "@material-ui/core/AppBar";
 import { Icon } from "@iconify/react";
 import menuIcon from "@iconify-icons/mdi/menu";
 import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
 import CloseIcon from "@material-ui/icons/Close";
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -20,7 +24,9 @@ const useStyles = makeStyles((theme) => ({
       display: "flex",
       height: "100%",
       justifyContent: "center",
-      width: "75%",
+      width: "100%",
+      alignItems: "center",
+      // boxShadow: "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
     },
   },
   sectionMobile: {
@@ -33,9 +39,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function TopBar() {
+function TopBar(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+
+  const handleChange = (event) => {
+    props.setTheme(event.target.value);
+  };
+
   const navData = [
     { key: 1, offset: -73, to: "aboutMe", title: "About me" },
     { key: 2, offset: -57, to: "service", title: "My Services" },
@@ -56,28 +67,48 @@ function TopBar() {
   return (
     <div className="top-bar-container">
       <div className={classes.sectionDesktop}>
-        <Grid container justify="center">
+        <div className="top-bar-item-container">
           {navData.map((data) => {
             return (
-              // <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item hover-high-effect" key={data.key}>
               <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true}>
                 <Button className="item-btn hover-high-effect">
                   <strong className="top-bar-text">{data.title}</strong>
                 </Button>
               </Link>
-              // </Grid>
             );
           })}
-        </Grid>
+          <Box sx={{ minWidth: 150 }}>
+            <FormControl fullWidth sx={{ m: 1, minWidth: 150, backgroundColor: "white", borderRadius: "5px" }} size="small">
+              <InputLabel id="demo-simple-select-label">Choose Theme</InputLabel>
+              <Select labelId="demo-simple-select-label" id="demo-simple-select" value={props.theme} label="Age" onChange={handleChange}>
+                <MenuItem value={1}>Theme 1</MenuItem>
+                <MenuItem value={2}>Theme 2</MenuItem>
+                <MenuItem value={3}>Theme 3</MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+        </div>
       </div>
       <div className={classes.sectionMobile}>
         <Grid container>
-          <Grid item xs={6} className="mobile-name-container">
+          <Grid item xs={5} className="mobile-name-container">
             <Link to="aboutMe" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true}>
               <strong>Abhishek Parashar</strong>
             </Link>
           </Grid>
-          <Grid item xs={6} className="mobile-button-container">
+          <Grid item xs={4}>
+            <Box sx={{ minWidth: 150 }}>
+              <FormControl fullWidth sx={{ m: 1, minWidth: 150, backgroundColor: "white", borderRadius: "5px" }} size="small">
+                <InputLabel id="demo-simple-select-label">Choose Theme</InputLabel>
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={props.theme} label="Age" onChange={handleChange}>
+                  <MenuItem value={1}>Theme 1</MenuItem>
+                  <MenuItem value={2}>Theme 2</MenuItem>
+                  <MenuItem value={3}>Theme 3</MenuItem>
+                </Select>
+              </FormControl>
+            </Box>
+          </Grid>
+          <Grid item xs={3} className="mobile-button-container">
             <Button onClick={handleClickOpen}>{open === false ? <Icon icon={menuIcon} className="mobile-top-bar-icon" /> : <CloseIcon className="mobile-top-bar-icon" />}</Button>
           </Grid>
           <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-labelledby="alert-dialog-slide-title" aria-describedby="alert-dialog-slide-description">
