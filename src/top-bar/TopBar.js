@@ -97,9 +97,9 @@ function TopBar(props) {
             </Link>
           </Grid>
           <Grid item xs={4}>
-            <Box sx={{ minWidth: 150 }}>
-              <FormControl fullWidth sx={{ m: 1, minWidth: 150, backgroundColor: "white", borderRadius: "5px" }} size="small">
-                <InputLabel id="demo-simple-select-label">Choose Theme</InputLabel>
+            <Box sx={{ minWidth: 120 }}>
+              <FormControl fullWidth sx={{ m: 1, width: 120, backgroundColor: "white", borderRadius: "5px" }} size="small">
+                <InputLabel id="demo-simple-select-label">Themes</InputLabel>
                 <Select labelId="demo-simple-select-label" id="demo-simple-select" value={props.theme} label="Age" onChange={handleChange}>
                   <MenuItem value={1}>Theme 1</MenuItem>
                   <MenuItem value={2}>Theme 2</MenuItem>
