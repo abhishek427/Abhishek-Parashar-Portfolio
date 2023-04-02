@@ -79,7 +79,7 @@ function TopBar(props) {
           })}
           <Box sx={{ minWidth: 150 }}>
             <FormControl fullWidth sx={{ m: 1, minWidth: 150, backgroundColor: "white", borderRadius: "5px" }} size="small">
-              <InputLabel id="demo-simple-select-label">Choose Theme</InputLabel>
+              <InputLabel id="demo-simple-select-label">Themes</InputLabel>
               <Select labelId="demo-simple-select-label" id="demo-simple-select" value={props.theme} label="Age" onChange={handleChange}>
                 <MenuItem value={1}>Theme 1</MenuItem>
                 <MenuItem value={2}>Theme 2</MenuItem>
