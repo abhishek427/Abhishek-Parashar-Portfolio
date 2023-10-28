@@ -84,7 +84,7 @@ const AboutMe = () => {
                 </Typography>
               </div>
               <div className="resume-button-container" data-aos="flip-up">
-                <a href="https://drive.google.com/file/d/1IEyvuwXrjNGIXJcYP3s1JKDPr4TgCXm9/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1GSrl7yUjDWxN2rWerY6-Ssc5sgBX5cGM/view?usp=sharing">
                   <Button variant="contained" size="large" className="resume-btn hover-effect">
                     <strong className="icon-heading-container">
                       <span data-aos="flip-down">
