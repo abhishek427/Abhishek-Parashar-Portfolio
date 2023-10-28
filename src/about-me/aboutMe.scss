@@ -70,3 +70,50 @@ a {
   background-color: $primary-color !important;
   color: $secondary-color !important;
 }
+.swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  float: left;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.swing img {
+  border: 5px solid #f8f8f8;
+  display: block;
+}
+.swing:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 5px solid white;
+  top: -23px;
+  left: 44%;
+  z-index: 0;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+/* nail */
+.swing:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: -28px;
+  left: 50%;
+  z-index: 5;
+  border-radius: 50% 50%;
+  background: black;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+.about-me-heading {
+  margin-bottom: 20px !important;
+}

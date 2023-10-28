@@ -14,14 +14,14 @@ const AboutMe = () => {
     <div>
       <Paper elevation={10} className="paper-size about-me-container" id="aboutMe">
         <Grid container justify="center" data-aos="fade-down">
-          <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height">
+          <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height about-me-heading">
             <Typography variant="h4" className="heading-color hover-high-effect">
               About me
             </Typography>
             <Typography className="primary-color page-sub-heading">Who I am</Typography>
           </Grid>
           <Grid item lg={4} md={4} sm={12} xs={12} className="image-container hover-effect">
-            <Paper elevation={10} className="my-image-paper-size" data-aos="flip-down">
+            <Paper elevation={10} className="my-image-paper-size swing" data-aos="flip-down">
               <img src={myImage} className="image-size" alt="Abhishek Parashar" />
             </Paper>
           </Grid>
