@@ -144,8 +144,10 @@ function Form() {
         <small>{errors["subject"]}</small>
         <div className="messageContainer">
           <label className="heading-color">Message</label>
-          <input
-            type="text"
+          <textarea
+            cols="10"
+            rows="5"
+            charswidth="23"
             name="message"
             value={msg}
             id="msg"
@@ -155,7 +157,7 @@ function Form() {
               setMsg(e.target.value);
               validate();
             }}
-          />
+          ></textarea>
           <small>{errors["msg"]}</small>
         </div>
         <div className="send-btn-container">
