@@ -71,9 +71,7 @@ function TopBar(props) {
           {navData.map((data) => {
             return (
               <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true}>
-                <Button className="item-btn hover-high-effect">
-                  <strong className="top-bar-text">{data.title}</strong>
-                </Button>
+                <strong className="top-bar-text hover-high-effect">{data.title}</strong>
               </Link>
             );
           })}
@@ -92,7 +90,7 @@ function TopBar(props) {
         <Grid container>
           <Grid item xs={5} className="mobile-name-container">
             <Link to="aboutMe" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true}>
-              <strong>Abhishek Parashar</strong>
+              <strong className="my-name">Abhishek Parashar</strong>
             </Link>
           </Grid>
           <Grid item xs={4}>
@@ -115,9 +113,7 @@ function TopBar(props) {
                 return (
                   <Grid item lg={12} md={12} sm={12} xs={12} className="mobile-top-bar-item" key={data.key}>
                     <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true} className="mobile-top-bar-link" onClick={handleClose}>
-                      <Button className="item-btn">
-                        <strong className="top-bar-text-mobile">{data.title}</strong>
-                      </Button>
+                      <strong className="top-bar-text-mobile">{data.title}</strong>
                     </Link>
                   </Grid>
                 );

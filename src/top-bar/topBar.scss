@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .top-bar-container {
-  background-color: $primary-color !important;
+  margin-top: 5px;
   height: 58px;
   top: 0;
   position: fixed;
@@ -36,6 +36,7 @@
 }
 .top-bar-text {
   color: $secondary-color;
+  margin: 12px;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 .top-bar-text-mobile {
@@ -72,5 +73,57 @@ Select {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.top-bar-item-container a {
+  display: block;
+  position: relative;
+  text-align: center;
+  background: $primary-color;
+  color: #fff;
+  margin: 25px 0;
+  padding: 10px 0;
+  font-size: 20px;
+  font-family: cursive;
+  text-decoration: none;
+  border: 2px dashed white;
+  outline: 6px solid $primary-color;
+  backface-visibility: hidden;
+  transition: transform 0.2s ease-in-out;
+  z-index: 2;
+}
+.top-bar-item-container a:hover {
+  text-decoration: underline;
+  outline: 6px solid $primary-color;
+}
+
+.top-bar-item-container a:before {
+  top: -5px;
+  bottom: -5px;
+  left: -8px;
+  right: -8px;
+  box-shadow: 0 0 10px 1px #000;
+  border-radius: 0px;
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
+
+.top-bar-item-container a:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+.top-bar-item-container a:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.top-bar-item-container a:hover:nth-child(odd),
+.top-bar-item-container a:hover:nth-child(even) {
+  transform: rotate(0deg);
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.my-name {
+  color: $primary-color;
 }
