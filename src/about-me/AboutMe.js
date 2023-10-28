@@ -16,7 +16,7 @@ const AboutMe = () => {
         <Grid container justify="center" data-aos="fade-down">
           <Grid item lg={12} md={12} sm={12} xs={12} className="heading-alignment heading-height about-me-heading">
             <Typography variant="h4" className="heading-color hover-high-effect">
-              About me
+              About Abhishek
             </Typography>
             <Typography className="primary-color page-sub-heading">Who I am</Typography>
           </Grid>
@@ -43,7 +43,10 @@ const AboutMe = () => {
               </div>
               <div className="side-spacing-aboutme">
                 <Typography variant="inherit" className="peragraph-fontsize heading-color">
-                  <p> I hold a Post Graduate Diploma in Computer Applications (PGDCA) and a Bachelor's degree in Computer Science. Currently, I am serving as a Senior Software Engineer at To The New in Noida. With over four years of experience in web application development, my expertise includes a wide range of technologies and tools.</p>
+                  <p>
+                    {" "}
+                    I hold a Post Graduate Diploma in Computer Applications (PGDCA) and a Bachelor's degree in Computer Science. Currently, I am serving as a <span className="high-light-text">Senior Software Engineer</span> at <span className="high-light-text">To The New </span>in Noida. With over four years of experience in web application development, my expertise includes a wide range of technologies and tools.
+                  </p>
                   <b>My primary skills encompass:</b>
                   <ul>
                     <li>
