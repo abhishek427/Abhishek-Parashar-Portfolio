@@ -15,6 +15,7 @@
 @media (max-width: 960px) {
   .top-bar-container {
     width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -124,6 +125,6 @@ a {
   text-decoration: none !important;
   cursor: pointer;
 }
-.my-name {
-  color: $primary-color;
+.top-mobile-container {
+  background-color: $primary-color !important;
 }

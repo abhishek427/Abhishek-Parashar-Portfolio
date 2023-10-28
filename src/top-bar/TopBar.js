@@ -87,7 +87,7 @@ function TopBar(props) {
         </div>
       </div>
       <div className={classes.sectionMobile}>
-        <Grid container>
+        <Grid container className="top-mobile-container">
           <Grid item xs={5} className="mobile-name-container">
             <Link to="aboutMe" smooth={true} duration={500} offset={-73} activeClass="active" isDynamic={true}>
               <strong className="my-name">Abhishek Parashar</strong>
