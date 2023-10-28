@@ -53,7 +53,7 @@ function TopBar(props) {
     { key: 3, offset: -73, to: "skill", title: "My Skills" },
     { key: 4, offset: -57, to: "project", title: "My Projects" },
     { key: 5, offset: -73, to: "awards", title: "My Awards" },
-    // { key: 6, offset: -57, to: "courses", title: "My Courses" },
+    { key: 6, offset: -57, to: "courses", title: "My Courses" },
     { key: 7, offset: -57, to: "contact", title: "Contact me" },
   ];
   const handleClickOpen = () => {
@@ -83,7 +83,6 @@ function TopBar(props) {
               <Select labelId="demo-simple-select-label" id="demo-simple-select" value={props.theme} label="Age" onChange={handleChange}>
                 <MenuItem value={1}>Theme 1</MenuItem>
                 <MenuItem value={2}>Theme 2</MenuItem>
-                {/* <MenuItem value={3}>Theme 3</MenuItem> */}
               </Select>
             </FormControl>
           </Box>
@@ -103,7 +102,6 @@ function TopBar(props) {
                 <Select labelId="demo-simple-select-label" id="demo-simple-select" value={props.theme} label="Age" onChange={handleChange}>
                   <MenuItem value={1}>Theme 1</MenuItem>
                   <MenuItem value={2}>Theme 2</MenuItem>
-                  <MenuItem value={3}>Theme 3</MenuItem>
                 </Select>
               </FormControl>
             </Box>

@@ -11,9 +11,9 @@ import acc from "../images/acc.jpeg";
 import test from "../images/test.jpeg";
 
 let cardData = [
-  { key: 1, title: "Web Developer", icon: languageJavascript, img: js, subheading: "I have a good knowledge of JavaScript and have done many projects on javascript related frameworks and libraries." },
-  { key: 2, title: "Accessibility developer", icon: wheelchairAccessibility, img: acc, subheading: "I worked on a couple of projects to make Accessibility for the Differently abled people and having good knowledge of WCAG 2.0 and WCAG 3.0." },
-  { key: 3, title: "Tester", icon: cogsIcon, img: test, subheading: "I have good knowledge of writing unit tests, functional tests, and integration testing. Using mocha chai and Cypress.io" },
+  { key: 1, title: "Web Developer", icon: languageJavascript, img: js, subheading: "I possess strong JavaScript expertise and have executed numerous projects involving various JavaScript frameworks and libraries." },
+  { key: 2, title: "Accessibility developer", icon: wheelchairAccessibility, img: acc, subheading: "I've actively contributed to accessibility projects aimed at enhancing digital experiences for differently-abled individuals. My proficiency extends to WCAG 2.0 and a solid understanding of WCAG 3.0 guidelines." },
+  { key: 3, title: "Tester", icon: cogsIcon, img: test, subheading: "I possess a strong skill set in writing unit tests, functional tests, and integration testing, leveraging tools like Mocha, Chai, Jest, and Cypress.io." },
 ];
 const NewServices = () => {
   return (

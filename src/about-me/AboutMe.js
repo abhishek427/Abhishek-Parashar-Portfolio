@@ -43,14 +43,48 @@ const AboutMe = () => {
               </div>
               <div className="side-spacing-aboutme">
                 <Typography variant="inherit" className="peragraph-fontsize heading-color">
-                  I have done Post Graduate Diploma in Computer Applications (PGDCA), And B.tech in Computer Science Branch and currently working for To The New, Noida.
-                  <p> I have a total work experience of Three years plus in web application development that includes React Js, JavaScript, HTML, CSS.</p>
-                  <p> In addition to these, I have experience in some of the latest technologies and tools like Git, Jira, Postman, etc. Some of the programming languages and frameworks that I have hands-on are React Js, Redux, Angular, Cypress.io, etc.</p>
-                  <p> I am looking forward to adding Design Patterns, Data Structures, Nodejs, React Native, and Python near future.</p>
+                  <p> I hold a Post Graduate Diploma in Computer Applications (PGDCA) and a Bachelor's degree in Computer Science. Currently, I am serving as a Senior Software Engineer at To The New in Noida. With over four years of experience in web application development, my expertise includes a wide range of technologies and tools.</p>
+                  <b>My primary skills encompass:</b>
+                  <ul>
+                    <li>
+                      <i>Front-end Development - </i>
+                      Proficient in React.js and Next.js, with a strong command of JavaScript, HTML, and CSS.
+                    </li>
+                    <br />
+                    <li>
+                      <i>Back-end Development - </i>
+                      Experienced in Node.js and Express.js for building robust server-side applications.
+                    </li>
+                    <br />
+                    <li>
+                      <i>Version Control and Project Management - </i>
+                      Skilled in using Git for version control and Jira for project management.
+                    </li>
+                    <br />
+                    <li>
+                      <i>API Testing - </i>
+                      Familiar with Postman for API testing and documentation.
+                    </li>
+                    <br />
+                    <li>
+                      <i>State Management - </i>
+                      Proficient in Redux for managing application state in complex front-end projects.
+                    </li>
+                    <br />
+                    <li>
+                      <i>Testing - </i>
+                      Skilled in using Cypress.io and Jest for end-to-end testing of web applications.
+                    </li>
+                  </ul>
+                  <br />
+                  Furthermore, my technical knowledge extends to a variety of programming languages and frameworks, including Angular,Vue js.
+                  <br />
+                  <br />I am passionate about staying up-to-date with the latest industry trends and technologies, which enables me to contribute effectively to dynamic web development projects. My strong analytical and problem-solving skills, coupled with a proactive approach to software engineering, make me a valuable asset in delivering high-quality web applications. <br />
+                  <br />
                 </Typography>
               </div>
               <div className="resume-button-container" data-aos="flip-up">
-                <a href="https://drive.google.com/file/d/1Yv79Hp_GJb4aQ5B1iL_Z0uBYnQnvmaYH/view?usp=share_link">
+                <a href="https://drive.google.com/file/d/1IEyvuwXrjNGIXJcYP3s1JKDPr4TgCXm9/view?usp=sharing">
                   <Button variant="contained" size="large" className="resume-btn hover-effect">
                     <strong className="icon-heading-container">
                       <span data-aos="flip-down">
