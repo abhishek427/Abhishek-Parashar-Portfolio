@@ -83,7 +83,7 @@ function TopBar(props) {
               <Select labelId="demo-simple-select-label" id="demo-simple-select" value={props.theme} label="Age" onChange={handleChange}>
                 <MenuItem value={1}>Theme 1</MenuItem>
                 <MenuItem value={2}>Theme 2</MenuItem>
-                <MenuItem value={3}>Theme 3</MenuItem>
+                {/* <MenuItem value={3}>Theme 3</MenuItem> */}
               </Select>
             </FormControl>
           </Box>

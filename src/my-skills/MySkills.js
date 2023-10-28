@@ -5,18 +5,22 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 
 let skillData = [
-  { key: 1, title: "React js", width: "85%" },
-  { key: 2, title: "Redux", width: "85%" },
-  { key: 3, title: "React Material UI", width: "80%" },
-  { key: 4, title: "JavaScript", width: "80%" },
-  { key: 5, title: "HTML", width: "80%" },
-  { key: 6, title: "Accessibility", width: "70%" },
-  { key: 7, title: "CSS", width: "75%" },
-  { key: 8, title: "SCSS", width: "60%" },
-  { key: 9, title: "Git", width: "70%" },
-  { key: 10, title: "Angular", width: "40%" },
-  { key: 11, title: "Cypress.io", width: "50%" },
-  { key: 12, title: "Vue Js", width: "40%" },
+  { title: "React js", width: "85%" },
+  { title: "Redux", width: "85%" },
+  { title: "Next js", width: "60%" },
+  { title: "Tailwind css", width: "50%" },
+  { title: "Node js", width: "40%" },
+  { title: "Express js", width: "40%" },
+  { title: "React Material UI", width: "80%" },
+  { title: "JavaScript", width: "80%" },
+  { title: "HTML", width: "80%" },
+  { title: "Accessibility", width: "70%" },
+  { title: "CSS", width: "75%" },
+  { title: "SCSS", width: "60%" },
+  { title: "Git", width: "70%" },
+  { title: "Angular", width: "40%" },
+  { title: "Cypress.io", width: "50%" },
+  { title: "Vue Js", width: "40%" },
 ];
 function MySkills() {
   return (
@@ -34,9 +38,9 @@ function MySkills() {
             I have 3 plus years of industry experience as a React and Front-end developer. And having Hands-on, comprehensive knowledge of agile methodologies and web-based applications, and Proven ability to work on multiple projects while meeting challenging deadlines.These are the following technology I know -
           </p>
         </Grid>
-        {skillData.map((data) => {
+        {skillData.map((data, index) => {
           return (
-            <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing-my-skill" key={data.key}>
+            <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing-my-skill" key={index}>
               <div className="hover-effect" data-aos="zoom-in">
                 <Grid container>
                   <Grid item xs={6} className="heading-color">

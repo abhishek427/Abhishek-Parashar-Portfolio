@@ -12,6 +12,9 @@ import TopBar from "./top-bar/TopBar";
 import MyServices from "./my-services/MyServices";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import MyCourses from "./my-courses/MyCourses";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -68,7 +71,7 @@ function App() {
         <MySkills />
         <MyProject />
         <MyAwards />
-        {/* <MyCourses /> */}
+        <MyCourses />
         <ContactMe />
       </main>
       <footer className="footer-width">

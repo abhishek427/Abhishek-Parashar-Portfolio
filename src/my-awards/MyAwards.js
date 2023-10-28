@@ -25,7 +25,7 @@ function MyAwards() {
           return (
             <Grid item lg={6} md={6} sm={12} xs={12} key={item.id}>
               <Card elevation={10} className="award-card" data-aos="fade-up">
-                <img src={item.img} className="image-size hover-effect" />
+                <img src={item.img} alt={item.id} className="image-size hover-effect" />
               </Card>
             </Grid>
           );

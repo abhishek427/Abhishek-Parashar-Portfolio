@@ -1,0 +1,16 @@
+.course-slider {
+  margin: auto;
+  width: 85vw;
+  margin-bottom: 40px;
+}
+.course-slider-item {
+  width: 90% !important;
+  margin-left: 20px !important;
+  background-color: red;
+}
+.slick-dots li.slick-active button:before {
+  color: red !important;
+}
+.slick-dots li button:before {
+  color: white !important;
+}
