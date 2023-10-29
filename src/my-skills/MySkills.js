@@ -7,12 +7,12 @@ import Paper from "@material-ui/core/Paper";
 let skillData = [
   { title: "React js", width: "85%" },
   { title: "Redux", width: "85%" },
+  { title: "JavaScript", width: "80%" },
   { title: "Next js", width: "60%" },
   { title: "Tailwind css", width: "50%" },
   { title: "Node js", width: "40%" },
   { title: "Express js", width: "40%" },
   { title: "React Material UI", width: "80%" },
-  { title: "JavaScript", width: "80%" },
   { title: "HTML", width: "80%" },
   { title: "Accessibility", width: "70%" },
   { title: "CSS", width: "75%" },

@@ -40,7 +40,7 @@ function MyServices() {
                   <div className="imageContner-project">
                     <img src={data.image} alt="" className="image-size-project hover-effect" />
                   </div>
-                  <p className="heading-color card-heading hover-high-effect">{data.title}</p>
+                  <p className="heading-color card-heading hover-high-effect no-margin">{data.title}</p>
                   <div className="project-heading-container">
                     <p className="heading-color">{data.subheading}</p>
                   </div>

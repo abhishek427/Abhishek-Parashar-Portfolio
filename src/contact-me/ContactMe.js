@@ -44,7 +44,7 @@ function ContactMe() {
                 </Grid>
                 <Grid item xs={11}>
                   <strong className="heading-color">{data.title}</strong>
-                  <p className="contact-value heading-color">{data.value}</p>
+                  <p className="contact-value heading-color">{data.title === "Email" ? <a href={`mailto:${data.value}`}>{data.value}</a> : <p>{data.value}</p>}</p>
                 </Grid>
               </Grid>
             );
