@@ -16,31 +16,37 @@ const courses = [
     id: 1,
     title: "mernVsNext",
     image: mernVsNext,
+    url: "https://www.udemy.com/certificate/UC-d5ffab32-46e7-4e69-847d-d97fe6b3fb2b/",
   },
   {
     id: 2,
     title: "mern",
     image: mern,
+    url: "https://www.udemy.com/certificate/UC-1ffc00f3-dbb8-4182-9f04-e099f812a5b2/",
   },
   {
     id: 3,
     title: "reactjs",
     image: reactjs,
+    url: "https://www.udemy.com/certificate/UC-f1dceedb-2bc2-415b-bb7f-e1e629c3b875/",
   },
   {
     id: 4,
     title: "typescript",
     image: typeScript,
+    url: "https://www.udemy.com/certificate/UC-ffa930cd-c4ce-49de-b666-ef258e1b9531/",
   },
   {
     id: 5,
-    title: "mern",
+    title: "webpack",
     image: webpack,
+    url: "https://www.udemy.com/certificate/UC-fe518b99-394b-4fb9-830f-2be782d6f03c/",
   },
   {
     id: 6,
-    title: "node",
+    title: "node js",
     image: node,
+    url: "https://www.udemy.com/certificate/UC-0cd2e579-a139-4428-9e9f-2d187ca08348/",
   },
 ];
 function MyCourses() {
@@ -72,10 +78,19 @@ function MyCourses() {
       </Grid>
       <div className="course-slider">
         <Slider {...settings}>
-          {courses.map((item) => {
+          {courses.map((item, index) => {
             return (
-              <Card elevation={10} className="award-card course-slider-item" data-aos="fade-up">
-                <img src={item.image} alt={item.title} className="image-size hover-effect" />
+              <Card elevation={10} className="award-card course-slider-item" data-aos="fade-up" key={index}>
+                <div class="card__collection clear-fix">
+                  <div className="cards cards--two">
+                    <img src={item.image} className="img-responsive" alt={item.title} />
+                    <span className="cards--two__rect"></span>
+                    <span className="cards--two__tri"></span>
+                    <a href={item.url} target="_blank">
+                      View Credential
+                    </a>
+                  </div>
+                </div>
               </Card>
             );
           })}
