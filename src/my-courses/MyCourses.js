@@ -81,7 +81,7 @@ function MyCourses() {
           {courses.map((item, index) => {
             return (
               <Card elevation={10} className="award-card course-slider-item" data-aos="fade-up" key={index}>
-                <div class="card__collection clear-fix">
+                <div className="card__collection clear-fix">
                   <div className="cards cards--two">
                     <img src={item.image} className="img-responsive" alt={item.title} />
                     <span className="cards--two__rect"></span>

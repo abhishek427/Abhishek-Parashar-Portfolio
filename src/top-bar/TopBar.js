@@ -68,9 +68,9 @@ function TopBar(props) {
     <div className="top-bar-container">
       <div className={classes.sectionDesktop}>
         <div className="top-bar-item-container">
-          {navData.map((data) => {
+          {navData.map((data, index) => {
             return (
-              <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true}>
+              <Link key={index} o={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true}>
                 <strong className="top-bar-text hover-high-effect">{data.title}</strong>
               </Link>
             );
