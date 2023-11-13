@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./contactMe.scss";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -24,6 +24,34 @@ let contactData = [
   { key: 3, title: "Email", value: "abhishek427821@gmail.com", icon: emailOutline },
 ];
 function ContactMe() {
+  const [greeting, setGreeting] = useState("");
+
+  const updateGreeting = () => {
+    const currentTime = new Date();
+    const currentHour = currentTime.getHours();
+
+    let newGreeting = "";
+
+    if (currentHour < 12) {
+      newGreeting = "Good morning";
+    } else if (currentHour < 18) {
+      newGreeting = "Good afternoon";
+    } else {
+      newGreeting = "Good evening";
+    }
+
+    setGreeting(newGreeting);
+  };
+  useEffect(() => {
+    // Update the greeting when the component mounts
+    updateGreeting();
+
+    // Update the greeting every minute
+    const interval = setInterval(updateGreeting, 60000);
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(interval);
+  }, []);
   return (
     <Paper elevation={10} className="paper-size" id="contact">
       <Grid container justify="center" spacing={3} data-aos="zoom-in-up">
@@ -35,6 +63,7 @@ function ContactMe() {
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12} className="side-spacing">
           <p className="section-heading heading-color">Get in Touch</p>
+          <p className="heading-color">Hello {greeting},</p>
           <p className="heading-color">Here is my contact info. Feel free to contact me.</p>
           {contactData.map((data) => {
             return (
