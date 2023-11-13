@@ -48,13 +48,13 @@ function TopBar(props) {
   };
 
   const navData = [
-    { key: 1, offset: -73, to: "aboutMe", title: "About me" },
-    { key: 2, offset: -57, to: "service", title: "My Services" },
+    { key: 1, offset: -75, to: "aboutMe", title: "About me" },
+    { key: 2, offset: -70, to: "service", title: "My Services" },
     { key: 3, offset: -73, to: "skill", title: "My Skills" },
-    { key: 4, offset: -57, to: "project", title: "My Projects" },
+    { key: 4, offset: -70, to: "project", title: "My Projects" },
     { key: 5, offset: -73, to: "awards", title: "My Awards" },
-    { key: 6, offset: -57, to: "courses", title: "My Courses" },
-    { key: 7, offset: -57, to: "contact", title: "Contact me" },
+    { key: 6, offset: -70, to: "courses", title: "My Courses" },
+    { key: 7, offset: -73, to: "contact", title: "Contact me" },
   ];
   const handleClickOpen = () => {
     setOpen(true);

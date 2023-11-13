@@ -13,7 +13,7 @@ import test from "../images/test.jpeg";
 let cardData = [
   { key: 1, title: "Web Developer", icon: languageJavascript, img: js, subheading: "I possess strong JavaScript expertise and have executed numerous projects involving various JavaScript frameworks and libraries." },
   { key: 2, title: "Accessibility developer", icon: wheelchairAccessibility, img: acc, subheading: "I've actively contributed to accessibility projects aimed at enhancing digital experiences for differently-abled individuals. My proficiency extends to WCAG 2.0 and a solid understanding of WCAG 3.0 guidelines." },
-  { key: 3, title: "Tester", icon: cogsIcon, img: test, subheading: "I possess a strong skill set in writing unit tests, functional tests, and integration testing, leveraging tools like Mocha, Chai, Jest, and Cypress.io." },
+  { key: 3, title: "devtest", icon: cogsIcon, img: test, subheading: "I possess a strong skill set in writing unit tests, functional tests, and integration testing, leveraging tools like Mocha, Chai, Jest, and Cypress.io." },
 ];
 const NewServices = () => {
   return (
