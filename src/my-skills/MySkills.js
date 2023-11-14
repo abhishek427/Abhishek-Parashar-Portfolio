@@ -70,7 +70,7 @@ function MySkills() {
                     {data.width}
                   </Grid>
                 </Grid>
-                <div id="progressbar">
+                <div id="progressbar" className="hover-effect">
                   <div style={{ width: data.width }}></div>
                 </div>
               </div>
