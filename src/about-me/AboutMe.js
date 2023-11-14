@@ -11,7 +11,7 @@ import download from "@iconify-icons/mdi/download";
 import moment from "moment";
 
 const AboutMe = () => {
-  const startDate = moment("2019-11-25");
+  const startDate = moment("2019-11-24");
   const currentDate = moment();
   const duration = moment.duration(currentDate.diff(startDate));
 
@@ -56,7 +56,12 @@ const AboutMe = () => {
                     {" "}
                     I hold a Post Graduate Diploma in Computer Applications (PGDCA) and a Bachelor's degree in Computer Science. Currently, I am serving as a <span className="high-light-text">Senior Software Engineer</span> at <span className="high-light-text">To The New </span>in Noida. With{" "}
                     <span className="high-light-text">
-                      {years} {years === 1 ? "year" : "years"}, {months} {months === 1 ? "month" : "months"}
+                      {years} {years === 1 ? "year" : "years"}{" "}
+                      {months !== 0 && (
+                        <>
+                          , {months} {months === 1 ? "month" : "months"}
+                        </>
+                      )}
                     </span>{" "}
                     of experience in web application development, my expertise includes a wide range of technologies and tools.
                   </p>
