@@ -17,7 +17,6 @@ const AboutMe = () => {
 
   const years = duration.years();
   const months = duration.months();
-  const days = duration.days();
 
   return (
     <div>

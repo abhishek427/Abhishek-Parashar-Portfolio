@@ -11,8 +11,8 @@ import acc from "../images/acc.jpeg";
 import test from "../images/test.jpeg";
 
 let cardData = [
-  { key: 1, title: "Web Developer", icon: languageJavascript, img: js, subheading: "I possess strong JavaScript expertise and have executed numerous projects involving various JavaScript frameworks and libraries." },
-  { key: 2, title: "Accessibility developer", icon: wheelchairAccessibility, img: acc, subheading: "I've actively contributed to accessibility projects aimed at enhancing digital experiences for differently-abled individuals. My proficiency extends to WCAG 2.0 and a solid understanding of WCAG 3.0 guidelines." },
+  { key: 1, title: "Web Development", icon: languageJavascript, img: js, subheading: "I possess strong JavaScript expertise and have executed numerous projects involving various JavaScript frameworks and libraries." },
+  { key: 2, title: "Accessibility development", icon: wheelchairAccessibility, img: acc, subheading: "I've actively contributed to accessibility projects aimed at enhancing digital experiences for differently-abled individuals. My proficiency extends to WCAG 2.0 and a solid understanding of WCAG 3.0 guidelines." },
   { key: 3, title: "devtest", icon: cogsIcon, img: test, subheading: "I possess a strong skill set in writing unit tests, functional tests, and integration testing, leveraging tools like Mocha, Chai, Jest, and Cypress.io." },
 ];
 const NewServices = () => {
@@ -41,8 +41,8 @@ const NewServices = () => {
                   </div>
                 </div>
                 <div className="flip-card-back">
-                  <p className="heading-color card-heading hover-high-effect">{data.title}</p>
-                  <p className="heading-color hover-effect">{data.subheading}</p>
+                  <p className="heading-color card-heading hover-effect">{data.title}</p>
+                  <p className="heading-color hover-effect flip-card-back-subheading">{data.subheading}</p>
                 </div>
               </div>
             </div>
