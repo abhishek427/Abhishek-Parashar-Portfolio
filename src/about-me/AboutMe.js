@@ -11,7 +11,7 @@ import download from "@iconify-icons/mdi/download";
 import moment from "moment";
 
 const AboutMe = () => {
-  const startDate = moment("2019-11-24");
+  const startDate = moment("2019-11-25");
   const currentDate = moment();
   const duration = moment.duration(currentDate.diff(startDate));
 

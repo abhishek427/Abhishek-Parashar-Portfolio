@@ -23,7 +23,7 @@ let skillData = [
   { title: "Cypress.io", width: "50%" },
   { title: "Vue Js", width: "40%" },
 ];
-const startDate = moment("2019-11-24");
+const startDate = moment("2019-11-25");
 const currentDate = moment();
 const duration = moment.duration(currentDate.diff(startDate));
 
@@ -55,7 +55,7 @@ function MySkills() {
                 and {days} {days === 1 ? "day" : "days"}{" "}
               </>
             )}
-            of industry experience as a React and Front-end developer. My expertise encompasses agile methodologies and web-based applications. I have a proven track record of successfully managing multiple projects and consistently meeting demanding deadlines. Feel free to reach out for further details about my technical skills and experiences -{" "}
+            of industry experience as a JavaScript developer. My expertise encompasses agile methodologies and web-based applications. I have a proven track record of successfully managing multiple projects and consistently meeting demanding deadlines. Feel free to reach out for further details about my technical skills and experiences -{" "}
           </p>
         </Grid>
         {skillData.map((data, index) => {
