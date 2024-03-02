@@ -73,7 +73,7 @@ const AboutMe = () => {
                     <br />
                     <li>
                       <i>Back-end Development - </i>
-                      Experienced in Node.js, Express.js, C#, and .NET for building robust server-side applications.
+                      Experienced in Node.js and Express.js for building robust server-side applications.
                     </li>
                     <br />
                     <li>
@@ -104,7 +104,7 @@ const AboutMe = () => {
                 </Typography>
               </div>
               <div className="resume-button-container" data-aos="flip-up">
-                <a href="https://drive.google.com/file/d/1oVmO3ULLr5Yw6_fAL2G875xEhDGAJ9pE/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1IGxMbTnLRIqPN-5TzzxWvfRp3xKjq62y/view?usp=sharing">
                   <Button variant="contained" size="large" className="resume-btn hover-effect">
                     <strong className="icon-heading-container">
                       <span data-aos="flip-down">

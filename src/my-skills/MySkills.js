@@ -13,10 +13,6 @@ let skillData = [
   { title: "Tailwind css", width: "50%" },
   { title: "Node js", width: "40%" },
   { title: "Express js", width: "40%" },
-  { title: "C#", width: "40%" },
-  { title: ".Net", width: "40%" },
-  { title: "Docker", width: "40%" },
-  { title: "Kubernetes", width: "40%" },
   { title: "React Material UI", width: "80%" },
   { title: "HTML", width: "80%" },
   { title: "Accessibility", width: "70%" },
@@ -25,7 +21,7 @@ let skillData = [
   { title: "Git", width: "70%" },
   { title: "Angular", width: "40%" },
   { title: "Cypress.io", width: "50%" },
-  { title: "Vue Js", width: "40%" },
+  { title: "Vue Js", width: "30%" },
 ];
 const startDate = moment("2019-11-25");
 const currentDate = moment();
